@@ -1,8 +1,14 @@
-Apachitei Maria Luisa:
+Apachitei Maria Luisa: - procesare tweets si trimiterea lor catre server in timp real
+                       - testare corectitudine predictii si creare de statistici
 
-Munteanu Rares Costin:
+Munteanu Rares Costin: - creare de modele machine learning si trimiterea lor catre server
+                       - construit o metoda de testare a performantei modelului 
 
-Ursu Vlad:
+Ursu Vlad:             - construit intreaga arhitectura a server-ului
+                       - selectarea modelului cu performanta cea mai mare
+                       - utilizarea modelului incontinuu pentru tweet-urile primite si trimiterea predictiilor catre procesator
 
-Virvarei Alexandru: 
+
+Virvarei Alexandru:    - creare de modele machine learning si trimiterea lor catre server
+                       - construit o metoda de testare a performantei modelului 
 
