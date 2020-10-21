@@ -26,7 +26,8 @@ Initially, we will use a confusion matrix to check the number of correctly class
 
 
 ## Resources and tools
-keras, scikit-learn, tweepy and python-twitter, selenium 
+keras, scikit-learn, tweepy and python-twitter, selenium
+Dataset: https://www.kaggle.com/c/nlp-getting-started/data
 
 ## Bibliography:
 [1] https://d1wqtxts1xzle7.cloudfront.net/30469791/aas99text.pdf?1358890133=&response-content-disposition=inline%3B+filename%3DText_categorisation_A_survey.pdf&Expires=1603226893&Signature=cUKRpE4VKiIC~fmFhhEY9-vc8ufe4ThKnXAnNHvAasNgYQ5AvBKMZwnv2THf3tWrc1bSED4pV1ggG0bMTiWY~O4Xn~kF0g5X1DkMHxy0TJSv0kTWBNjPJ9KP34Qp6vYUqc~2h~PbPZ6BeWtU21SVvcPK9FfahTClnrc62MpWfAXit7xIQJ3M1hPQaiRBN6oZ-~8gGmEdE61UyRBReKdrG6rmJ9FEhUmTYv8jys6wbIJiVhQg12T0hdvTYbqHaUiWQRhpMmG0lW~j8DjWcdb5RMlN4Oea7njyqou09CKyesuZMgSvYiWlEBPvDvlj4cI7BUTKjpBYA8Dp5ihEy4snzg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
