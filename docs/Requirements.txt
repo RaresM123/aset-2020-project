@@ -1,0 +1,12 @@
+	The main component of our project is a ML model which is fed an illogical statement and it should be able to generate a logical explanation as to why the input sentence is not logically correct.
+Example:
+Statement: He put an elephant into the fridge.
+
+Referential Reasons:
+
+An elephant is much bigger than a fridge.
+A fridge is much smaller than an elephant.
+Most of the fridges aren’t large enough to contain an elephant.
+
+	Being a sequence-to-sequence task, the model will consist of two components, an encoder and a decoder. Due to the fact that the input is a sentence written in natural language in english, the encoder will be a vectorizing algorithm, such as tf-idf, word2vec or google's BERT. The obtained vectorial representation is fed as the input to the decoder algorithm, which will consist of a generator model. Recurrent Neural Networks are the go-to approach for this kind of many-to-many problems, especially more advanced architectures such as LSTM. At this time, OpenAI's GPT-2 is considered to be state of the art in sequence generating models. GPT-3 is not yet fully released, so we will probably incorporate GPT-2 model in our end project. 
+	Evaluating the performance of such a system is yet another open research issue, and the current methods perform poorly (eg. SemEval's BELU). An empirical human analysis might be a better option, given the fact that the testing set only contains ~1000 samples. To collect more samples and get a more accurate evaluation of our model, we will also implement a public website where people can input illogical sentences which will be sent to our trained model, and the generated explanation will be presented to the user.
