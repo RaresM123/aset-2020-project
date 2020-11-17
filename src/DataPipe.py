@@ -18,3 +18,6 @@ class data:
 
 	def getIterator(self):
 		...
+	
+        def isValid(self, content):
+                ...
