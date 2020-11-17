@@ -13,7 +13,7 @@ class iterator:
 class data:
 	# the data read from disk that is supposed to be piped to the word embedder
 
-	def __init__(self):
+	def __init__(self,path):
 		...
 
 	def getIterator(self):
