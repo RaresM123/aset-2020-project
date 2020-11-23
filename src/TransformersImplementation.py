@@ -1,11 +1,10 @@
 import string
-
-import en_core_web_sm
+import spacy
 import numpy as np
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
-
+from spacy.lang.en.stop_words import STOP_WORDS
 import DataSetParser
 
 class StemmerImplementation(DataSetParser.Stemmer):
@@ -29,21 +28,17 @@ class LemmatizerImplementationSPACY(DataSetParser.Lemmatizer):
         Spacy lemmatized much better than nltk,
         one of the examples risen -> rise, only spacy handled that.
         """
-        nlp = en_core_web_sm.load()
-        lemmatize_words = np.vectorize(nlp)
-        self.corpus = [t.lemma_ for t in lemmatize_words(self.corpus)]
+        new_corpus = []
+        nlp = spacy.load("en_core_web_sm")
+        for el in self.corpus:
+            new_corpus+=[nlp(str(el))]
+        self.corpus = new_corpus.copy()
 
 class StopWordsImplementation(DataSetParser.StopWords):
-    def _remove_punct(self, doc):
-        return [t for t in doc if t.text not in string.punctuation]
-
-    def _remove_stop_words(self, doc):
-        return [t for t in doc if not t.is_stop]
-
+    def _remove_punct(self):
+        return [t for t in self.corpus if t.doc.text not in string.punctuation]
+    def _remove_stop_words(self):
+        return [t.doc.text for t in self.corpus if t.doc.text not in STOP_WORDS]
     def RemoveStopWords(self):
-        nlp = en_core_web_sm.load()
-        doc = np.vectorize(nlp)
-        self.corpus = self._remove_punct(doc)
-        self.corpus = self._remove_stop_words(doc)
-
-
+        self.corpus = self._remove_punct()
+        self.corpus = self._remove_stop_words()
