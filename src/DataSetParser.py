@@ -1,31 +1,31 @@
 class Stemmer:
     corpus = []
 
-    def Stem():
+    def Stem(self, text):
         pass
 
-    def GetCorpus():
-        pass
+    def GetCorpus(self):
+        return self.corpus
 
 class Lemmatizer:
     def Lemmatize(self):
         pass
 
     def SetCorpus(self, corpus):
-        pass
+        self.corpus = corpus
 
     def GetCorpus(self):
-        pass
+        return self.corpus
 
 class StopWords:
     def RemoveStopWords(self):
         pass
 
     def SetCorpus(self, corpus):
-        pass
+        self.corpus = corpus
 
     def GetCorpus(self):
-        pass
+        return self.corpus
 
 class DataSetParser:
     corpus = []
@@ -33,14 +33,14 @@ class DataSetParser:
     lemmatizer = None
     stop_words = None
 
-    def SetStemmer(stemmer):
-        pass
+    def SetStemmer(self, stemmer):
+        self.stemmer = stemmer
 
-    def SetLemmatizer(lemmatizer):
-        pass
+    def SetLemmatizer(self, lemmatizer):
+        self.lemmatizer = lemmatizer
 
-    def SetStopWords(stop_words):
-        pass
+    def SetStopWords(self, stop_words):
+        self.stop_words = stop_words
 
     def ReadData(self):
         pass
@@ -51,24 +51,35 @@ class DataSetParser:
     def GetTestingData(self):
         pass
 
+    def PreProcessData(self, data):
+        self.stemmer.Stem(data)
+        self.corpus = self.stemmer.GetCorpus()
+        self.lemmatizer.SetCorpus(self.corpus)
+        self.lemmatizer.Lemmatize()
+        self.corpus = self.lemmatizer.GetCorpus()
+        self.stop_words.SetCorpus(self.corpus)
+        self.stop_words.RemoveStopWords()
+        self.corpus = self.stop_words.GetCorpus()
+
+
 class Builder:
-    def getStemmer():
-        pass
-    
-    def getLemmatizer():
+    def getStemmer(self):
         pass
 
-    def getStopWord():
+    def getLemmatizer(self):
+        pass
+
+    def getStopWord(self):
         pass
 
 class DataSetParserBuilder(Builder):
-    def getStemmer():
-        pass
-    
-    def getLemmatizer():
+    def getStemmer(self):
         pass
 
-    def getStopWord():
+    def getLemmatizer(self):
+        pass
+
+    def getStopWord(self):
         pass
 
 class Factory:
