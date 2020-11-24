@@ -3,12 +3,16 @@ import tarfile
 from DBConnection import DBConnection, InitiateDBConnection
 import TransformersImplementation
 import DataSetParser
+from logger.logger import LOGGER
 
 TAR_URL = r"dataset\CBTest.tgz"
 EXTRACT_PATH = r"dataset"
 TRAIN_DATA_PATH = r"dataset\CBTest\data\cbt_train.txt"
 
+
 def extract_dataset(tar_url, extract_path):
+
+	LOGGER.info("Extracting Dataset")
 	tar = tarfile.open(tar_url, 'r')
 	for item in tar:
 		tar.extract(item, extract_path)
@@ -39,7 +43,7 @@ def process_train_data():
 
 
 def insert_sentences(sentences):
-	print(sentences[0])
+	# print(sentences[0])
 	sql = """INSERT INTO sentences(sentence) VALUES(%s) RETURNING id;"""
 	obj = DBConnection()
 	conn = obj.get_connection()

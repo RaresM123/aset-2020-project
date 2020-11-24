@@ -1,5 +1,6 @@
 import pyodbc
 import psycopg2
+from logger.logger import LOGGER
 
 """Singleton Design Pattern Implementation"""
 
@@ -20,9 +21,11 @@ class InitiateDBConnection(object):
                                 password = self.password,
                               database = self.database,
                               host = self.host, port = self.port)
-        except(Exception,psycopg2.Error) as error:
-            print("Error while connecting to PostgreSQL",error)
+        except(Exception, psycopg2.Error) as error:
+
+            LOGGER.error("Error while connecting to PostgreSQL with error: {}".format(str(error)))
             return None
+
     # For explicitly opening database connection
     def __enter__(self):
         self.dbconn = self.create_connection()

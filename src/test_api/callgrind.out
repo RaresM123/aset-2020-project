@@ -1,0 +1,6231 @@
+event: ns : Nanoseconds
+events: ns
+summary: 1047488900
+fl=<frozen importlib._bootstrap>
+fn=_new_module
+35 1800
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:58
+58 3700
+cfl=~
+cfn=<built-in method _thread.allocate_lock>
+calls=4 0
+58 5800
+
+fl=<frozen importlib._bootstrap>
+fn=acquire
+78 6200
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=2 0
+78 400
+
+fl=<frozen importlib._bootstrap>
+fn=release
+103 4000
+cfl=~
+cfn=<built-in method _thread.get_ident>
+calls=2 0
+103 400
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:143
+143 800
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:147
+147 3500
+cfl=<frozen importlib._bootstrap>
+cfn=acquire
+calls=2 78
+147 6600
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock
+calls=2 157
+147 20200
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:151
+151 2300
+cfl=<frozen importlib._bootstrap>
+cfn=release
+calls=2 103
+151 4400
+
+fl=<frozen importlib._bootstrap>
+fn=_get_module_lock
+157 10000
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:58
+calls=2 58
+157 9500
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=2 0
+157 400
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=2 0
+157 300
+
+fl=<frozen importlib._bootstrap>
+fn=cb
+176 3000
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=2 0
+176 300
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=2 0
+176 200
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+176 300
+
+fl=<frozen importlib._bootstrap>
+fn=_call_with_frames_removed
+211 6200
+cfl=~
+cfn=<built-in method builtins.exec>
+calls=2 0
+211 929500
+
+fl=<frozen importlib._bootstrap>
+fn=_verbose_message
+222 9900
+
+fl=<frozen importlib._bootstrap>
+fn=__init__:342
+342 1400
+
+fl=<frozen importlib._bootstrap>
+fn=cached
+376 3200
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached
+calls=2 424
+376 29800
+
+fl=<frozen importlib._bootstrap>
+fn=parent
+389 1400
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=2 0
+389 400
+
+fl=<frozen importlib._bootstrap>
+fn=has_location
+397 500
+
+fl=<frozen importlib._bootstrap>
+fn=_init_module_attrs
+477 11400
+cfl=<frozen importlib._bootstrap>
+cfn=cached
+calls=4 376
+477 33000
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=2 389
+477 1800
+cfl=<frozen importlib._bootstrap>
+cfn=has_location
+calls=2 397
+477 500
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=12 0
+477 7400
+
+fl=<frozen importlib._bootstrap>
+fn=module_from_spec
+549 3700
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module
+calls=2 35
+549 1800
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs
+calls=2 477
+549 54100
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module
+calls=2 774
+549 400
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+549 500
+
+fl=<frozen importlib._bootstrap>
+fn=_load_unlocked
+650 8800
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=2 222
+650 600
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec
+calls=2 549
+650 60500
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module
+calls=2 777
+650 1352400
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+650 600
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=2 0
+650 500
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:725
+725 1900
+cfl=~
+cfn=<built-in method _imp.is_builtin>
+calls=2 0
+725 6400
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec:800
+800 3500
+cfl=~
+cfn=<built-in method _imp.is_frozen>
+calls=2 0
+800 2100
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__:863
+863 2300
+cfl=~
+cfn=<built-in method _imp.acquire_lock>
+calls=6 0
+863 700
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__:867
+867 2200
+cfl=~
+cfn=<built-in method _imp.release_lock>
+calls=6 0
+867 1000
+
+fl=<frozen importlib._bootstrap>
+fn=_find_spec
+890 14400
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:725
+calls=2 725
+890 8300
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec:800
+calls=2 800
+890 5600
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:863
+calls=6 863
+890 3000
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:867
+calls=6 867
+890 3200
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1334
+calls=2 1334
+890 552900
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load_unlocked
+956 5400
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked
+calls=2 650
+956 1392400
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec
+calls=2 890
+956 587400
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=2 0
+956 600
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load
+986 16900
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:143
+calls=2 143
+986 800
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__:147
+calls=2 147
+986 30300
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__:151
+calls=2 151
+986 6700
+cfl=<frozen importlib._bootstrap>
+cfn=cb
+calls=2 176
+986 3800
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked
+calls=2 956
+986 1723700
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+986 300
+
+fl=<frozen importlib._bootstrap>
+fn=_handle_fromlist
+1017 1400
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+1017 300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+1017 100
+
+fl=<frozen importlib._bootstrap_external>
+fn=_relax_case
+36 3200
+
+fl=<frozen importlib._bootstrap_external>
+fn=_unpack_uint32
+51 5600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=6 0
+51 600
+cfl=~
+cfn=<built-in method from_bytes>
+calls=6 0
+51 1300
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_join
+62 24700
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>
+calls=40 64
+62 32600
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=40 0
+62 6700
+
+fl=<frozen importlib._bootstrap_external>
+fn=<listcomp>
+64 24400
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=84 0
+64 8200
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_split
+68 9600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=4 0
+68 400
+cfl=~
+cfn=<method 'rsplit' of 'str' objects>
+calls=4 0
+68 1900
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_stat
+80 7100
+cfl=~
+cfn=<built-in method nt.stat>
+calls=12 0
+80 407900
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_is_mode_type
+90 1800
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=2 80
+90 66600
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isfile
+99 5500
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=2 90
+99 68400
+
+fl=<frozen importlib._bootstrap_external>
+fn=cache_from_source
+294 15200
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=4 62
+294 8600
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split
+calls=4 68
+294 11900
+cfl=~
+cfn=<built-in method nt.fspath>
+calls=4 0
+294 500
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=4 0
+294 800
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=4 0
+294 900
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_cached
+424 4200
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=2 294
+424 24500
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=2 0
+424 1100
+
+fl=<frozen importlib._bootstrap_external>
+fn=_check_name_wrapper
+456 2600
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename
+calls=2 964
+456 400
+
+fl=<frozen importlib._bootstrap_external>
+fn=_classify_pyc
+493 5000
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=2 51
+493 4200
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+493 500
+
+fl=<frozen importlib._bootstrap_external>
+fn=_validate_timestamp_pyc
+526 2800
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=4 51
+526 3300
+
+fl=<frozen importlib._bootstrap_external>
+fn=_compile_bytecode
+578 6700
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=2 222
+578 600
+cfl=~
+cfn=<built-in method _imp._fix_co_filename>
+calls=2 0
+578 600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+578 300
+cfl=~
+cfn=<built-in method marshal.loads>
+calls=2 0
+578 86400
+
+fl=<frozen importlib._bootstrap_external>
+fn=spec_from_file_location
+629 12700
+cfl=<frozen importlib._bootstrap>
+cfn=__init__:342
+calls=2 342
+629 1400
+cfl=~
+cfn=<built-in method nt.fspath>
+calls=2 0
+629 300
+
+fl=<frozen importlib._bootstrap_external>
+fn=create_module
+774 400
+
+fl=<frozen importlib._bootstrap_external>
+fn=exec_module
+777 6100
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=2 211
+777 935300
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code
+calls=2 849
+777 759300
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_code
+849 21900
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=2 222
+849 1100
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=2 294
+849 13400
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper
+calls=2 456
+849 3000
+cfl=<frozen importlib._bootstrap_external>
+cfn=_classify_pyc
+calls=2 493
+849 9700
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_timestamp_pyc
+calls=2 526
+849 6100
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode
+calls=2 578
+849 94600
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data
+calls=2 969
+849 548200
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats
+calls=2 1010
+849 61300
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__
+939 2000
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_filename
+964 400
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_data
+969 29800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+969 500
+cfl=~
+cfn=<built-in method io.open_code>
+calls=2 0
+969 427200
+cfl=~
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=2 0
+969 90700
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_stats
+1010 2000
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=2 80
+1010 59300
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_importer_cache
+1265 4500
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1302
+1302 17300
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache
+calls=10 1265
+1302 4500
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec:1431
+calls=8 1431
+1302 525200
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=8 0
+1302 2400
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=10 0
+1302 1100
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1334
+1334 2400
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1302
+calls=2 1302
+1334 550500
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec:1426
+1426 3200
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location
+calls=2 629
+1426 14400
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__
+calls=2 939
+1426 2000
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec:1431
+1431 74700
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=36 222
+1431 7600
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case
+calls=8 36
+1431 3200
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=36 62
+1431 55400
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=8 80
+1431 289100
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile
+calls=2 99
+1431 73900
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec:1426
+calls=2 1426
+1431 19600
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=8 0
+1431 1700
+
+fl=<string>
+fn=__new__
+1 1100
+cfl=~
+cfn=<built-in method __new__ of type object at 0x00007FFD1EE43810>
+calls=15 0
+1 7200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=_check_methods
+72 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__subclasshook__:392
+392 9500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__subclasshook__:406
+406 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=_check_methods
+calls=1 72
+406 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=get
+657 16700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=__getitem__
+calls=5 668
+657 31400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__getitem__
+calls=1 53
+657 1100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__getitem__:54
+calls=1 54
+657 6100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__getitem__:156
+calls=4 156
+657 7100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__contains__
+664 10500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=__getitem__
+calls=4 668
+664 16300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__getitem__
+calls=3 53
+664 4600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=items
+676 8700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__init__
+calls=8 698
+676 3700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__init__
+698 3700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__len__
+701 2700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+701 3200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=__iter__
+742 227800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=__getitem__
+calls=208 668
+742 602100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=__iter__
+calls=212 691
+742 88300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__getitem__
+calls=21 53
+742 18600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__iter__
+calls=4 59
+742 131800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=<genexpr>
+calls=25 60
+742 8700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+fn=update
+824 38300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__setitem__
+calls=27 48
+824 24600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__getitem__:156
+calls=4 156
+824 7000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__iter__
+calls=5 187
+824 4300
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=4 0
+824 1800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=9 0
+824 109500
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=9 0
+824 1700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\abc.py
+fn=__instancecheck__
+96 14200
+cfl=~
+cfn=<built-in method _abc._abc_instancecheck>
+calls=28 0
+96 137400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\abc.py
+fn=__subclasscheck__
+100 12300
+cfl=~
+cfn=<built-in method _abc._abc_subclasscheck>
+calls=32 0
+100 105500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\codecs.py
+fn=__new__
+94 2400
+cfl=~
+cfn=<built-in method __new__ of type object at 0x00007FFD1EE43810>
+calls=1 0
+94 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+fn=__init__
+82 17900
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=2 0
+82 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+fn=__enter__
+108 2800
+cfl=~
+cfn=<built-in method builtins.next>
+calls=2 0
+108 2300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+fn=__exit__
+117 5500
+cfl=~
+cfn=<built-in method builtins.next>
+calls=2 0
+117 29500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+fn=helper
+238 4100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=__init__
+calls=2 82
+238 19500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+fn=_sanitize_header
+281 10600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\utils.py
+cfn=_has_surrogates
+calls=9 51
+281 7800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=9 0
+281 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+fn=header_source_parse
+293 10400
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=4 0
+293 700
+cfl=~
+cfn=<method 'lstrip' of 'str' objects>
+calls=4 0
+293 1500
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=4 0
+293 1500
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=4 0
+293 2300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+fn=header_fetch_parse
+311 6000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+cfn=_sanitize_header
+calls=9 281
+311 20000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=__init__:53
+53 27800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=close:70
+70 3800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=pushlines
+calls=1 122
+70 1300
+cfl=~
+cfn=<method 'readlines' of '_io._IOBase' objects>
+calls=1 0
+70 1300
+cfl=~
+cfn=<method 'seek' of '_io.StringIO' objects>
+calls=2 0
+70 500
+cfl=~
+cfn=<method 'truncate' of '_io.StringIO' objects>
+calls=1 0
+70 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=readline
+78 10700
+cfl=~
+cfn=<method 'popleft' of 'collections.deque' objects>
+calls=5 0
+78 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=push
+101 11500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=pushlines
+calls=1 122
+101 3300
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=1 0
+101 900
+cfl=~
+cfn=<method 'readlines' of '_io._IOBase' objects>
+calls=1 0
+101 13900
+cfl=~
+cfn=<method 'seek' of '_io.StringIO' objects>
+calls=2 0
+101 600
+cfl=~
+cfn=<method 'truncate' of '_io.StringIO' objects>
+calls=1 0
+101 600
+cfl=~
+cfn=<method 'write' of '_io.StringIO' objects>
+calls=1 0
+101 3600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=pushlines
+122 3700
+cfl=~
+cfn=<method 'extend' of 'collections.deque' objects>
+calls=2 0
+122 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=__iter__
+125 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=__next__
+128 7400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=readline
+calls=7 78
+128 11500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=__init__:139
+139 14900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=__init__:53
+calls=1 53
+139 27800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=__init__
+calls=1 120
+139 4500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=feed
+173 2200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=push
+calls=1 101
+173 34400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_call_parse
+calls=1 178
+173 141400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=_call_parse
+178 3700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_parsegen
+calls=2 218
+178 148400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=close:184
+184 3800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=close:70
+calls=1 70
+184 7200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_call_parse
+calls=1 178
+184 10700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_pop_message
+calls=1 210
+184 3700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_content_maintype
+calls=1 588
+184 11900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=_new_message
+197 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=__init__
+calls=1 120
+197 1600
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+197 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=_pop_message
+210 3200
+cfl=~
+cfn=<method 'pop' of 'list' objects>
+calls=1 0
+210 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=_parsegen
+218 23300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=__iter__
+calls=2 125
+218 400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=__next__
+calls=7 128
+218 18900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_new_message
+calls=1 197
+218 4900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=_parse_headers
+calls=1 471
+218 44200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=set_payload
+calls=1 303
+218 2000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_content_type
+calls=1 564
+218 19300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_content_maintype
+calls=2 588
+218 23100
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+218 700
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+218 200
+cfl=~
+cfn=<method 'match' of 're.Pattern' objects>
+calls=6 0
+218 11400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+fn=_parse_headers
+471 19700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+cfn=header_source_parse
+calls=4 293
+471 16400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=set_raw
+calls=4 479
+471 4100
+cfl=~
+cfn=<method 'find' of 'str' objects>
+calls=4 0
+471 2100
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=4 0
+471 1900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=_splitparam
+29 6600
+cfl=~
+cfn=<method 'partition' of 'str' objects>
+calls=4 0
+29 1000
+cfl=~
+cfn=<method 'strip' of 'str' objects>
+calls=4 0
+29 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=__init__
+120 6100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=is_multipart
+181 1300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+181 700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=get_payload
+213 4400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=is_multipart
+calls=1 181
+213 700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get
+calls=1 462
+213 3200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\utils.py
+cfn=_has_surrogates
+calls=1 51
+213 1000
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+213 100
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+213 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=set_payload
+303 1500
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+303 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=items
+451 1800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=<listcomp>
+calls=1 459
+451 13300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=<listcomp>
+459 3400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+cfn=header_fetch_parse
+calls=4 311
+459 9900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=get
+462 23300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\_policybase.py
+cfn=header_fetch_parse
+calls=5 311
+462 16100
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=41 0
+462 7900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=set_raw
+479 3300
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+479 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=get_all
+497 10600
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=20 0
+497 3400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=get_content_type
+564 13900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=_splitparam
+calls=4 29
+564 8600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get
+calls=4 462
+564 23400
+cfl=~
+cfn=<method 'count' of 'str' objects>
+calls=4 0
+564 2400
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+564 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+fn=get_content_maintype
+588 3900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_content_type
+calls=3 564
+588 29800
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=3 0
+588 1300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+fn=__init__
+17 1300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+fn=parse
+41 10000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=__init__:139
+calls=1 139
+41 47200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=feed
+calls=1 173
+41 178000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\feedparser.py
+cfn=close:184
+calls=1 184
+41 37300
+cfl=~
+cfn=<method 'read' of '_io.StringIO' objects>
+calls=2 0
+41 1800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+fn=parsestr
+59 8700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+cfn=parse
+calls=1 41
+59 274300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\utils.py
+fn=_has_surrogates
+51 6000
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=10 0
+51 2800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\__init__.py
+fn=normalize_encoding
+43 4600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+43 200
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+43 400
+cfl=~
+cfn=<method 'isalnum' of 'str' objects>
+calls=4 0
+43 900
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+43 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\__init__.py
+fn=search_function
+70 9000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\__init__.py
+cfn=normalize_encoding
+calls=1 43
+70 6400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\idna.py
+cfn=getregentry
+calls=1 300
+70 7200
+cfl=~
+cfn=<built-in method builtins.__import__>
+calls=1 0
+70 4100
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+70 100
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=3 0
+70 600
+cfl=~
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+70 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\idna.py
+fn=encode
+147 5800
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+147 1100
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=2 0
+147 400
+cfl=~
+cfn=<method 'split' of 'bytes' objects>
+calls=2 0
+147 7100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\idna.py
+fn=getregentry
+300 4300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\codecs.py
+cfn=__new__
+calls=1 94
+300 2900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+fn=__call__
+278 5200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+cfn=__new__
+calls=4 557
+278 3100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+fn=__new__
+557 3100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+fn=value
+659 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+fn=__and__
+828 3000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+cfn=__call__
+calls=2 278
+828 3700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+828 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\genericpath.py
+fn=exists
+16 5000
+cfl=~
+cfn=<built-in method nt.stat>
+calls=2 0
+16 97000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=parse_headers
+200 23000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+cfn=__init__
+calls=1 17
+200 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\parser.py
+cfn=parsestr
+calls=1 59
+200 283000
+cfl=~
+cfn=<built-in method builtins.len>
+calls=10 0
+200 1400
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+200 1300
+cfl=~
+cfn=<method 'decode' of 'bytes' objects>
+calls=1 0
+200 1000
+cfl=~
+cfn=<method 'join' of 'bytes' objects>
+calls=1 0
+200 400
+cfl=~
+cfn=<method 'readline' of '_io.BufferedReader' objects>
+calls=5 0
+200 58600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=__init__:233
+233 20600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=makefile
+calls=1 301
+233 34600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_read_status
+263 14600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+263 400
+cfl=~
+cfn=<method 'readline' of '_io.BufferedReader' objects>
+calls=1 0
+263 1040222600
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+263 1200
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+263 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=begin
+296 22600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get
+calls=3 462
+296 11700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=parse_headers
+calls=1 200
+296 370000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_read_status
+calls=1 263
+296 1040239600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_check_close
+calls=1 376
+296 11600
+cfl=~
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+296 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_check_close
+376 2600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get
+calls=3 462
+376 9000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_close_conn
+405 2600
+cfl=~
+cfn=<method 'close' of '_io.BufferedReader' objects>
+calls=1 0
+405 95100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=close:410
+410 2300
+cfl=~
+cfn=<function SocketIO.close at 0x00000258D62D23A0>
+calls=1 0
+410 5600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=flush
+422 3800
+cfl=~
+cfn=<function HTTPResponse.flush at 0x00000258D63DD550>
+calls=1 0
+422 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=isclosed
+433 1800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=read
+443 9000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=readinto
+calls=1 475
+443 132800
+cfl=~
+cfn=<method 'tobytes' of 'memoryview' objects>
+calls=1 0
+443 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=readinto
+475 15800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_close_conn
+calls=1 405
+475 97700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+475 400
+cfl=~
+cfn=<method 'readinto' of '_io.BufferedReader' objects>
+calls=1 0
+475 18900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=__init__:815
+815 23800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_get_hostport
+calls=1 859
+815 1200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=host:146
+calls=1 146
+815 1300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_get_hostport
+859 1200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=close:922
+922 4100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=close:496
+calls=1 496
+922 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=send
+936 8600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=connect
+calls=1 199
+936 517200
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+936 800
+cfl=~
+cfn=<method 'sendall' of '_socket.socket' objects>
+calls=2 0
+936 75400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_output
+974 3200
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=9 0
+974 1200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_send_output
+995 7700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=send
+calls=2 936
+995 602000
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+995 400
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+995 100
+cfl=~
+cfn=<method 'join' of 'bytes' objects>
+calls=1 0
+995 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=putrequest
+1049 8600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_output
+calls=1 974
+1049 600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_encode_request
+calls=1 1174
+1049 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_validate_path
+calls=1 1178
+1049 1200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=host:127
+calls=1 127
+1049 1100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=putheader
+calls=1 216
+1049 14400
+cfl=~
+cfn=<method 'decode' of 'bytes' objects>
+calls=1 0
+1049 400
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+1049 200
+cfl=~
+cfn=<method 'find' of 'str' objects>
+calls=1 0
+1049 500
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+1049 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_encode_request
+1174 600
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+1174 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_validate_path
+1178 800
+cfl=~
+cfn=<method 'search' of 're.Pattern' objects>
+calls=1 0
+1178 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=putheader
+1186 24900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_output
+calls=8 974
+1186 3800
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=16 0
+1186 1900
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=16 0
+1186 3700
+cfl=~
+cfn=<method 'fullmatch' of 're.Pattern' objects>
+calls=8 0
+1186 6300
+cfl=~
+cfn=<method 'join' of 'bytes' objects>
+calls=8 0
+1186 1000
+cfl=~
+cfn=<method 'search' of 're.Pattern' objects>
+calls=8 0
+1186 2500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=endheaders
+1214 2300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_send_output
+calls=1 995
+1214 611100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=request
+1227 2400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=_send_request
+calls=1 1232
+1227 718900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=_send_request
+1232 14000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=items
+calls=1 676
+1232 1700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__iter__
+calls=8 742
+1232 12900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=endheaders
+calls=1 1214
+1232 613400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=<genexpr>
+calls=8 1234
+1232 6000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__iter__
+calls=1 59
+1232 900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=putrequest
+calls=1 203
+1232 32200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=putheader
+calls=7 216
+1232 37500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+1232 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=<genexpr>
+1234 4000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=<genexpr>
+calls=8 60
+1234 1200
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=7 0
+1234 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+fn=getresponse
+1278 52200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=__init__:233
+calls=1 233
+1278 55200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=begin
+calls=1 296
+1278 1040655800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=close:922
+calls=1 922
+1278 4000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=_debug
+44 1500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=__init__:871
+871 8500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=vals_sorted_by_key
+1213 8200
+cfl=~
+cfn=<built-in method builtins.sorted>
+calls=6 0
+1213 4200
+cfl=~
+cfn=<method 'keys' of 'dict' objects>
+calls=6 0
+1213 1100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=deepvalues
+1217 4300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=vals_sorted_by_key
+calls=6 1213
+1217 13500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=__init__:1252
+1252 10700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__init__:871
+calls=4 871
+1252 8500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=RLock
+calls=4 81
+1252 11200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=_cookies_for_request
+1281 900
+cfl=~
+cfn=<method 'keys' of 'dict' objects>
+calls=1 0
+1281 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=_cookie_attrs
+1288 2200
+cfl=~
+cfn=<method 'sort' of 'list' objects>
+calls=1 0
+1288 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=add_cookie_header
+1347 10100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=_debug
+calls=1 44
+1347 400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=_cookies_for_request
+calls=1 1281
+1347 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=_cookie_attrs
+calls=1 1288
+1347 3200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=clear_expired_cookies
+calls=1 1725
+1347 7000
+cfl=~
+cfn=<built-in method time.time>
+calls=1 0
+1347 800
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=1 0
+1347 500
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=1 0
+1347 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=make_cookies
+1590 10300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_all
+calls=4 497
+1590 14000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=info
+calls=2 111
+1590 600
+cfl=~
+cfn=<built-in method time.time>
+calls=2 0
+1590 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=extract_cookies
+1671 9300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=_debug
+calls=2 44
+1671 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=make_cookies
+calls=2 1590
+1671 25800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=info
+calls=2 111
+1671 400
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=2 0
+1671 1500
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=2 0
+1671 600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=clear_expired_cookies
+1725 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=deepvalues
+calls=1 1217
+1725 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__iter__
+calls=1 1744
+1725 700
+cfl=~
+cfn=<built-in method time.time>
+calls=1 0
+1725 200
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=1 0
+1725 200
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=1 0
+1725 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+fn=__iter__
+1744 3100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\__init__.py
+fn=dumps
+183 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\encoder.py
+cfn=encode
+calls=1 182
+183 19500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\encoder.py
+fn=encode
+182 3400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\encoder.py
+cfn=iterencode
+calls=1 204
+182 13400
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+182 300
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+182 2400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\encoder.py
+fn=iterencode
+204 13400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=_checkLevel
+189 900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+189 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=_acquireLock
+214 1800
+cfl=~
+cfn=<method 'acquire' of '_thread.RLock' objects>
+calls=2 0
+214 800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=_releaseLock
+223 1500
+cfl=~
+cfn=<method 'release' of '_thread.RLock' objects>
+calls=2 0
+223 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=__init__:772
+772 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=__init__:1220
+1220 1100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=getLogger:1272
+1272 8200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_acquireLock
+calls=1 214
+1272 1400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_releaseLock
+calls=1 223
+1272 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_fixupParents
+calls=1 1323
+1272 9400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=__init__:1392
+calls=1 1392
+1272 6500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+1272 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=_fixupParents
+1323 6500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=__init__:1220
+calls=1 1220
+1323 1100
+cfl=~
+cfn=<method 'rfind' of 'str' objects>
+calls=2 0
+1323 1800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=__init__:1392
+1392 4400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_checkLevel
+calls=1 189
+1392 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=__init__:772
+calls=1 772
+1392 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=debug
+1412 3200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=isEnabledFor
+calls=2 1677
+1412 10200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=getEffectiveLevel
+1663 3300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=isEnabledFor
+1677 6100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_acquireLock
+calls=1 214
+1677 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=_releaseLock
+calls=1 223
+1677 800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=getEffectiveLevel
+calls=1 1663
+1677 2100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+fn=getLogger:2003
+2003 2000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=getLogger:1272
+calls=1 1272
+2003 26900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+fn=<module>
+1 6300
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 986
+1 877900
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=2 0
+1 43100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+fn=NetrcParseError
+10 1200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+fn=netrc
+22 2200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\ntpath.py
+fn=_get_bothseps
+34 1100
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+34 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\ntpath.py
+fn=expanduser
+281 11000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__contains__
+calls=2 664
+281 9800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\ntpath.py
+cfn=_get_bothseps
+calls=2 34
+281 1400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=__getitem__
+calls=2 668
+281 3200
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+281 700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+281 300
+cfl=~
+cfn=<built-in method nt.fspath>
+calls=2 0
+281 400
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+281 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+fn=__getitem__
+668 246100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=encodekey
+calls=219 738
+668 406900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+fn=__iter__
+691 88300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+fn=check_str
+732 84300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=219 0
+732 26600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+fn=encodekey
+738 189500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\os.py
+cfn=check_str
+calls=219 732
+738 110900
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=219 0
+738 106500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+fn=__init__
+33 6700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=__init__
+calls=3 222
+33 16100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+cfn=_init
+calls=1 12
+33 1800
+cfl=~
+cfn=<built-in method _thread.allocate_lock>
+calls=1 0
+33 4100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+fn=put
+121 37800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=__enter__
+calls=11 246
+121 10000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=__exit__
+calls=11 249
+121 9600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=notify
+calls=11 341
+121 27400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+cfn=_qsize
+calls=11 15
+121 7100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+cfn=_put
+calls=11 18
+121 9700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+fn=get
+153 39300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=__enter__
+calls=12 246
+153 10400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=__exit__
+calls=12 249
+153 9000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=notify
+calls=11 341
+153 29400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+cfn=_qsize
+calls=12 15
+153 7500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+cfn=_get
+calls=11 21
+153 9600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\re.py
+fn=compile
+248 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\re.py
+cfn=_compile
+calls=1 287
+248 173000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\re.py
+fn=_compile
+287 9900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+cfn=__and__
+calls=1 828
+287 7600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=isstring
+calls=1 595
+287 700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=compile
+calls=1 759
+287 152300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\types.py
+cfn=__get__
+calls=1 171
+287 1700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+287 600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+287 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\shlex.py
+fn=<module>
+1 11300
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1017
+1 1800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\re.py
+cfn=compile
+calls=1 248
+1 174100
+cfl=~
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 17500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\shlex.py
+fn=shlex
+19 4400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=_intenum_converter
+97 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+cfn=__call__
+calls=2 278
+97 4600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=__init__:219
+219 131000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=makefile
+301 25500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=__init__:643
+calls=1 643
+301 7000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=readable
+calls=1 694
+301 2100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=_decref_socketios
+486 2000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=close:496
+calls=1 496
+486 80300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=_real_close
+492 2700
+cfl=~
+cfn=<function socket.close at 0x00000258D62CE940>
+calls=1 0
+492 75500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=close:496
+496 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=_real_close
+calls=1 492
+496 78200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=__init__:643
+643 7000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=readinto
+655 15100
+cfl=~
+cfn=<method '_checkClosed' of '_io._IOBase' objects>
+calls=3 0
+655 2100
+cfl=~
+cfn=<method '_checkReadable' of '_io._IOBase' objects>
+calls=3 0
+655 3400
+cfl=~
+cfn=<method 'recv_into' of '_socket.socket' objects>
+calls=3 0
+655 1040261800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=readable
+694 3700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=close:732
+732 8300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=_decref_socketios
+calls=1 486
+732 82300
+cfl=~
+cfn=<function SocketIO.close at 0x00000258D62D23A0>
+calls=1 0
+732 1200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+fn=getaddrinfo
+897 4500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=_intenum_converter
+calls=2 97
+897 7300
+cfl=~
+cfn=<built-in method _socket.getaddrinfo>
+calls=1 0
+897 24400
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+897 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_compile
+71 3300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_compile_charset
+calls=1 249
+71 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_optimize_charset
+calls=1 276
+71 13200
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+71 200
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+71 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_compile_charset
+249 6100
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+249 800
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=2 0
+249 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_optimize_charset
+276 15700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_mk_bitmap
+calls=2 411
+276 18700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=8 0
+276 600
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+276 800
+cfl=~
+cfn=<method 'find' of 'bytearray' objects>
+calls=10 0
+276 3100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_mk_bitmap
+411 8000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=<listcomp>
+calls=2 413
+411 9500
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+411 200
+cfl=~
+cfn=<method 'translate' of 'bytearray' objects>
+calls=2 0
+411 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=<listcomp>
+413 9500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_get_iscased
+453 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_get_literal_prefix
+461 1700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_get_iscased
+calls=1 453
+461 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_get_charset_prefix
+492 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_get_iscased
+calls=1 453
+492 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_compile_info
+536 7700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_compile_charset
+calls=1 249
+536 4300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_optimize_charset
+calls=1 276
+536 25700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_get_literal_prefix
+calls=1 461
+536 2000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_get_charset_prefix
+calls=1 492
+536 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=getwidth
+calls=1 174
+536 3900
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+536 200
+cfl=~
+cfn=<built-in method builtins.min>
+calls=1 0
+536 200
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+536 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=isstring
+595 900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+595 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=_code
+598 3000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_compile
+calls=1 71
+598 19900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_compile_info
+calls=1 536
+598 45800
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+598 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+fn=compile
+759 8100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=isstring
+calls=1 595
+759 400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_compile.py
+cfn=_code
+calls=1 598
+759 68800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=groups
+calls=2 81
+759 900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=parse
+calls=1 937
+759 72700
+cfl=~
+cfn=<built-in method _sre.compile>
+calls=1 0
+759 1100
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+759 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__init__:76
+76 1200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=groups
+81 800
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+81 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__init__:111
+111 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__len__
+160 600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+160 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__getitem__
+164 600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+164 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=append
+172 600
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+172 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=getwidth
+174 3000
+cfl=~
+cfn=<built-in method builtins.min>
+calls=2 0
+174 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__init__:224
+224 2600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__next
+calls=1 233
+224 1300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+224 0
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=__next
+233 7800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=match
+249 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__next
+calls=2 233
+249 900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=get
+254 4300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__next
+calls=11 233
+254 5600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=tell
+286 1200
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+286 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=_class_escape
+295 1600
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+295 700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=_uniq
+432 2400
+cfl=~
+cfn=<built-in method fromkeys>
+calls=1 0
+432 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=_parse_sub
+435 3600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=match
+calls=1 249
+435 300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=tell
+calls=1 286
+435 1000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=_parse
+calls=1 493
+435 56500
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+435 100
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+435 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=_parse
+493 29600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__init__:111
+calls=1 111
+493 900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__getitem__
+calls=1 164
+493 1000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=append
+calls=1 172
+493 700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=match
+calls=10 249
+493 3300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=get
+calls=11 254
+493 9900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=tell
+calls=1 286
+493 500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=_class_escape
+calls=1 295
+493 2300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=_uniq
+calls=1 432
+493 4000
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+493 1800
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=9 0
+493 800
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=10 0
+493 1300
+cfl=~
+cfn=<method 'insert' of 'list' objects>
+calls=1 0
+493 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=fix_flags
+921 1200
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+921 100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+fn=parse
+937 4700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__init__:76
+calls=1 76
+937 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__init__:224
+calls=1 224
+937 3900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=_parse_sub
+calls=1 435
+937 61600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=fix_flags
+calls=1 921
+937 1300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=RLock
+81 14400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=__init__
+222 16100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=__enter__
+246 13600
+cfl=~
+cfn=<method '__enter__' of '_thread.lock' objects>
+calls=23 0
+246 6800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=__exit__
+249 13900
+cfl=~
+cfn=<method '__exit__' of '_thread.lock' objects>
+calls=23 0
+249 4700
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=_is_owned
+261 12500
+cfl=~
+cfn=<method 'acquire' of '_thread.lock' objects>
+calls=22 0
+261 10300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+fn=notify
+341 34000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=_is_owned
+calls=22 261
+341 22800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\types.py
+fn=__get__
+171 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\enum.py
+cfn=value
+calls=1 659
+171 400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_noop
+99 3600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_coerce_args
+110 31300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=33 0
+110 3900
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=username
+147 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_userinfo
+calls=1 183
+147 1600
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=hostname
+155 13100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_hostinfo
+calls=8 195
+155 17700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=8 0
+155 800
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=8 0
+155 1100
+cfl=~
+cfn=<method 'partition' of 'str' objects>
+calls=8 0
+155 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_userinfo
+183 1100
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=1 0
+183 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_hostinfo
+195 12200
+cfl=~
+cfn=<method 'partition' of 'str' objects>
+calls=16 0
+195 3400
+cfl=~
+cfn=<method 'rpartition' of 'str' objects>
+calls=8 0
+195 2100
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=geturl
+330 500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlunparse
+calls=1 474
+330 8800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=urlparse
+366 36500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_noop
+calls=10 99
+366 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_coerce_args
+calls=10 110
+366 16000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlsplit
+calls=10 417
+366 61800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_splitnetloc
+391 5700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+391 200
+cfl=~
+cfn=<built-in method builtins.min>
+calls=1 0
+391 700
+cfl=~
+cfn=<method 'find' of 'str' objects>
+calls=3 0
+391 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=_checknetloc
+399 1900
+cfl=~
+cfn=<method 'isascii' of 'str' objects>
+calls=1 0
+399 300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=urlsplit
+417 35100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_noop
+calls=11 99
+417 1700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_coerce_args
+calls=11 110
+417 10100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_splitnetloc
+calls=1 391
+417 7600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_checknetloc
+calls=1 399
+417 2200
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+417 200
+cfl=~
+cfn=<method 'find' of 'str' objects>
+calls=1 0
+417 2000
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=11 0
+417 4200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=urlunparse
+474 5800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_noop
+calls=2 99
+474 300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_coerce_args
+calls=2 110
+474 5300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlunsplit
+calls=2 485
+474 10300
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=urlunsplit
+485 6100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_noop
+calls=2 99
+485 400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=_coerce_args
+calls=2 110
+485 3800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=unquote
+624 1400
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=quote
+787 2500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=quote_from_bytes
+calls=1 858
+787 6800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+787 200
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+787 500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=quote_from_bytes
+858 4900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+858 300
+cfl=~
+cfn=<method 'decode' of 'bytes' objects>
+calls=1 0
+858 300
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+858 300
+cfl=~
+cfn=<method 'rstrip' of 'bytes' objects>
+calls=1 0
+858 1000
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+fn=urlencode
+880 2300
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+880 300
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+880 400
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+880 200
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+fn=getproxies_environment
+2457 155800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__contains__
+calls=2 664
+2457 11500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=items
+calls=4 676
+2457 5300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__iter__
+calls=212 742
+2457 891500
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=104 0
+2457 14500
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+fn=getproxies_registry
+2618 18500
+cfl=~
+cfn=<built-in method winreg.OpenKey>
+calls=1 0
+2618 27900
+cfl=~
+cfn=<built-in method winreg.QueryValueEx>
+calls=1 0
+2618 14400
+cfl=~
+cfn=<method 'Close' of 'PyHKEY' objects>
+calls=1 0
+2618 16800
+
+fl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+fn=getproxies
+2663 25100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+cfn=getproxies_environment
+calls=1 2457
+2663 623200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+cfn=getproxies_registry
+calls=1 2618
+2663 77600
+
+fl=D:/FAC_MASTER/AN1/SEM1/TAIP/PROIECT_TEST/test_api/client.py
+fn=sendSentence
+7 8800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\api.py
+cfn=post
+calls=1 107
+7 1047371600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=text
+calls=1 838
+7 90000
+cfl=~
+cfn=<built-in method builtins.print>
+calls=1 0
+7 18500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\__init__.py
+fn=detect
+24 8300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+cfn=__init__
+calls=1 81
+24 41100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+cfn=feed
+calls=1 111
+24 23600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+cfn=close
+calls=1 220
+24 4700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+24 600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+fn=__init__
+81 9300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=getLogger:2003
+calls=1 2003
+81 28900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+cfn=reset
+calls=1 94
+81 2900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+fn=reset
+94 2900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+fn=feed
+111 14100
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+111 100
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+111 200
+cfl=~
+cfn=<method 'search' of 're.Pattern' objects>
+calls=2 0
+111 3100
+cfl=~
+cfn=<method 'startswith' of 'bytearray' objects>
+calls=5 0
+111 6100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\universaldetector.py
+fn=close
+220 3500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=getEffectiveLevel
+calls=1 1663
+220 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\_internal_utils.py
+fn=to_native_string
+14 3700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+14 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\_internal_utils.py
+fn=unicode_is_ascii
+30 1700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+30 200
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+30 900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=__init__:58
+58 1300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=__init__:113
+113 10400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=__init__:58
+calls=2 58
+113 1300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=init_poolmanager
+calls=2 146
+113 21900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+cfn=__init__
+calls=2 225
+113 10300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=init_poolmanager
+146 5500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=__init__
+calls=2 170
+146 16400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=cert_verify
+203 2700
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+203 200
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+203 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=build_response
+255 12100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=extract_cookies_to_jar
+calls=1 118
+255 50100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=__init__:599
+calls=1 599
+255 45900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=1 42
+255 32400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=get_encoding_from_headers
+calls=1 486
+255 7700
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=2 0
+255 500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+255 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=get_connection
+292 6900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=geturl
+calls=1 330
+292 9300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=1 366
+292 7500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=select_proxy
+calls=1 778
+292 35900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=connection_from_url
+calls=1 286
+292 323900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=close
+319 9400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=clear
+calls=2 215
+319 136300
+cfl=~
+cfn=<method 'values' of 'dict' objects>
+calls=2 0
+319 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=request_url
+329 3700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=1 366
+329 5900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=path_url
+calls=1 61
+329 5600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=select_proxy
+calls=1 778
+329 24200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=add_headers
+358 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+fn=send
+394 21200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__contains__
+calls=1 664
+394 3600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=cert_verify
+calls=1 203
+394 3300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=build_response
+calls=1 255
+394 149100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=get_connection
+calls=1 292
+394 383500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=request_url
+calls=1 329
+394 39400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=add_headers
+calls=1 358
+394 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=urlopen
+calls=1 518
+394 1041957100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=__init__
+calls=1 102
+394 2800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+394 600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\api.py
+fn=request
+16 12200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=__init__
+calls=1 362
+16 119800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=__enter__
+calls=1 424
+16 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=__exit__
+calls=1 427
+16 152100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=request
+calls=1 470
+16 1047076200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\api.py
+fn=post
+107 11100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\api.py
+cfn=request
+calls=1 16
+107 1047360500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=__init__:37
+37 8300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=3 366
+37 63300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=get_new_headers
+81 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=__init__:104
+104 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=info
+111 1000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=extract_cookies_to_jar
+118 9400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=extract_cookies
+calls=2 1671
+118 38700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=__init__:37
+calls=2 37
+118 34200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=__init__:104
+calls=2 104
+118 1100
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+118 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=get_cookie_header
+135 3900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=add_cookie_header
+calls=1 1347
+135 23400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=__init__:37
+calls=1 37
+135 37400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=get_new_headers
+calls=1 81
+135 200
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+135 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=update
+348 1900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=deepvalues
+calls=2 1217
+348 2800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__iter__
+calls=2 1744
+348 500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+348 100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=cookiejar_from_dict
+508 10100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__init__:1252
+calls=3 1252
+508 27700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__iter__
+calls=3 1744
+508 1900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=<listcomp>
+calls=3 521
+508 14800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=<listcomp>
+521 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=deepvalues
+calls=3 1217
+521 11900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+fn=merge_cookies
+529 3300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=update
+calls=2 348
+529 5300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+529 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+fn=default_hooks
+17 3800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+cfn=<dictcomp>
+calls=3 18
+17 1400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+fn=<dictcomp>
+18 1400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+fn=dispatch_hook
+23 1200
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+23 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=path_url
+61 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlsplit
+calls=1 417
+61 2300
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+61 200
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+61 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=_encode_params
+82 5800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlencode
+calls=1 880
+82 3200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=to_key_val_list
+calls=1 293
+82 14600
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+82 1000
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+82 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=register_hook
+175 2600
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+175 300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+175 7600
+cfl=~
+cfn=<method 'extend' of 'list' objects>
+calls=1 0
+175 1300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=<genexpr>
+184 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=__init__:226
+226 3600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+cfn=default_hooks
+calls=1 17
+226 1200
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+226 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=__init__:293
+293 5200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+cfn=default_hooks
+calls=1 17
+293 2500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare
+310 8800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_method
+calls=1 342
+310 4800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_url
+calls=1 358
+310 239900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_headers
+calls=1 444
+310 65900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_body
+calls=1 455
+310 60600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_auth
+calls=1 537
+310 21600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_cookies
+calls=1 559
+310 68400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_hooks
+calls=1 579
+310 13500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_method
+342 3500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\_internal_utils.py
+cfn=to_native_string
+calls=1 14
+342 1100
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+342 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_url
+358 17400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlunparse
+calls=1 474
+358 12900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\_internal_utils.py
+cfn=unicode_is_ascii
+calls=1 30
+358 2800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=_encode_params
+calls=1 82
+358 24900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=requote_uri
+calls=1 600
+358 16000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=parse_url
+calls=1 330
+358 162500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+358 1000
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+358 200
+cfl=~
+cfn=<method 'lstrip' of 'str' objects>
+calls=1 0
+358 700
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+358 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_headers
+444 17200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=items
+calls=1 676
+444 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__iter__
+calls=6 742
+444 15300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\_internal_utils.py
+cfn=to_native_string
+calls=5 14
+444 3400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=1 42
+444 6000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__setitem__
+calls=5 48
+444 5300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__len__
+calls=1 62
+444 1000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=check_header_validity
+calls=5 938
+444 16400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_body
+455 20400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__contains__
+calls=1 664
+455 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\json\__init__.py
+cfn=dumps
+calls=1 183
+455 22200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare_content_length
+calls=1 524
+455 8300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__setitem__
+calls=1 48
+455 500
+cfl=~
+cfn=<built-in method builtins.all>
+calls=1 0
+455 2800
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+455 700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+455 2100
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+455 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_content_length
+524 2300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__setitem__
+calls=1 48
+524 1500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=super_len
+calls=1 108
+524 4500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_auth
+537 2500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=get_auth_from_url
+calls=1 917
+537 16700
+cfl=~
+cfn=<built-in method builtins.any>
+calls=1 0
+537 2400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_cookies
+559 3100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=get_cookie_header
+calls=1 135
+559 65100
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+559 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=prepare_hooks
+579 1700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=register_hook
+calls=1 175
+579 11800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=__init__:599
+599 12400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=cookiejar_from_dict
+calls=1 508
+599 26000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=1 42
+599 7500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=is_redirect
+710 1600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__contains__
+calls=1 664
+710 3400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=apparent_encoding
+727 3100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\chardet\__init__.py
+cfn=detect
+calls=1 24
+727 78300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=content
+calls=1 818
+727 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=iter_content
+732 2600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+732 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=generate
+749 3900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=stream
+calls=2 555
+749 222100
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+749 600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=content
+818 7200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=iter_content
+calls=1 732
+818 2800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=iter_slices
+calls=1 525
+818 400
+cfl=~
+cfn=<method 'join' of 'bytes' objects>
+calls=1 0
+818 228800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+fn=text
+838 7000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=apparent_encoding
+calls=1 727
+838 81900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=content
+calls=2 818
+838 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=merge_setting
+50 28600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=items
+calls=1 676
+50 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=update
+calls=1 824
+50 6600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=<listcomp>:74
+calls=3 74
+50 144300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=1 42
+50 56000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=to_key_val_list
+calls=6 293
+50 60300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+50 18400
+cfl=~
+cfn=<method 'items' of 'collections.OrderedDict' objects>
+calls=2 0
+50 800
+cfl=~
+cfn=<method 'update' of 'collections.OrderedDict' objects>
+calls=2 0
+50 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=<listcomp>:74
+74 4600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__iter__
+calls=6 742
+74 139700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=merge_hooks
+81 1700
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+81 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=get_redirect_target
+98 1700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=is_redirect
+calls=1 710
+98 5000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=resolve_redirects
+144 3300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=1 366
+144 10800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=get_redirect_target
+calls=1 98
+144 6700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=__init__
+362 11400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=__init__:113
+calls=2 113
+362 43900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=cookiejar_from_dict
+calls=1 508
+362 20500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+cfn=default_hooks
+calls=1 17
+362 1500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=mount
+calls=2 749
+362 5700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=default_headers
+calls=1 813
+362 36800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=__enter__
+424 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=__exit__
+427 1500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=close
+calls=1 744
+427 150600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=prepare_request
+430 22100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\cookiejar.py
+cfn=__init__:1252
+calls=1 1252
+430 2700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=cookiejar_from_dict
+calls=1 508
+430 8000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=merge_cookies
+calls=2 529
+430 9800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=__init__:293
+calls=1 293
+430 7700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=prepare
+calls=1 310
+430 483500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=merge_setting
+calls=3 50
+430 290500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=merge_hooks
+calls=1 81
+430 2000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=get_netrc_auth
+calls=1 169
+430 1906300
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+430 200
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+430 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=request
+470 21000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=__init__:226
+calls=1 226
+470 5000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=prepare_request
+calls=1 430
+470 2733000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=send
+calls=1 626
+470 1042898200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=merge_environment_settings
+calls=1 701
+470 1417000
+cfl=~
+cfn=<method 'update' of 'dict' objects>
+calls=1 0
+470 1700
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+470 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=send
+626 32200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=send
+calls=1 394
+626 1042560800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\cookies.py
+cfn=extract_cookies_to_jar
+calls=1 118
+626 33800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\hooks.py
+cfn=dispatch_hook
+calls=1 23
+626 1600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=content
+calls=1 818
+626 237600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=<listcomp>:677
+calls=1 677
+626 22100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=get_adapter
+calls=1 730
+626 6000
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+626 1400
+cfl=~
+cfn=<built-in method time.perf_counter>
+calls=2 0
+626 900
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+626 300
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=1 0
+626 400
+cfl=~
+cfn=<method 'setdefault' of 'dict' objects>
+calls=4 0
+626 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=<listcomp>:677
+677 1300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=resolve_redirects
+calls=1 144
+677 20800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=merge_environment_settings
+701 14500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=2 657
+701 24000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=merge_setting
+calls=4 50
+701 27000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=get_environ_proxies
+calls=1 766
+701 1350900
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+701 200
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+701 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=get_adapter
+730 4000
+cfl=~
+cfn=<method 'items' of 'collections.OrderedDict' objects>
+calls=1 0
+730 100
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+730 700
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+730 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=close
+744 4100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\adapters.py
+cfn=close
+calls=2 319
+744 146200
+cfl=~
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=1 0
+744 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=mount
+749 2600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+cfn=<listcomp>:755
+calls=2 755
+749 3100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\sessions.py
+fn=<listcomp>:755
+755 2600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=6 0
+755 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=__init__
+42 16500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=update
+calls=7 824
+42 178300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=__setitem__
+48 26400
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=34 0
+48 5500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=__getitem__
+53 19900
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=25 0
+53 4400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=__iter__
+59 132700
+cfl=~
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=6 0
+59 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=<genexpr>
+60 10200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=__len__
+62 1700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=3 0
+62 700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+fn=copy
+82 3800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=2 42
+82 67900
+cfl=~
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=2 0
+82 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=proxy_bypass_registry
+48 13300
+cfl=~
+cfn=<built-in method winreg.OpenKey>
+calls=1 0
+48 43100
+cfl=~
+cfn=<built-in method winreg.QueryValueEx>
+calls=2 0
+48 49500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=proxy_bypass
+87 9500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+cfn=getproxies_environment
+calls=1 2457
+87 455400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=proxy_bypass_registry
+calls=1 48
+87 105900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=super_len
+108 3100
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=2 0
+108 600
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+108 200
+cfl=~
+cfn=<built-in method builtins.max>
+calls=1 0
+108 600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=get_netrc_auth
+169 12900
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 986
+169 1752500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+169 6100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\genericpath.py
+cfn=exists
+calls=2 16
+169 102000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\ntpath.py
+cfn=expanduser
+calls=2 281
+169 27800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=<genexpr>
+calls=3 176
+169 5000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=<genexpr>
+176 3100
+cfl=~
+cfn=<method 'format' of 'str' objects>
+calls=2 0
+176 1900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=to_key_val_list
+293 26000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=items
+calls=1 676
+293 2800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__len__
+calls=2 701
+293 5900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__iter__
+calls=5 742
+293 17900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=14 0
+293 20800
+cfl=~
+cfn=<method 'items' of 'collections.OrderedDict' objects>
+calls=1 0
+293 300
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=5 0
+293 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=_parse_content_type_header
+461 1900
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+461 400
+cfl=~
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+461 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=get_encoding_from_headers
+486 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+486 2100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=_parse_content_type_header
+calls=1 461
+486 2500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=iter_slices
+525 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=unquote_unreserved
+576 2900
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+576 100
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+576 200
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+576 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=requote_uri
+600 2400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=quote
+calls=1 787
+600 10000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=unquote_unreserved
+calls=1 576
+600 3600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=set_environ
+683 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=should_bypass_proxies
+705 10100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=__enter__
+calls=1 108
+705 2200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=__exit__
+calls=1 117
+705 4700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=helper
+calls=1 238
+705 5300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=hostname
+calls=2 155
+705 9200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=1 366
+705 6100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=proxy_bypass
+calls=1 87
+705 570800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=<lambda>
+calls=1 713
+705 10200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=<lambda>
+713 2100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=2 657
+713 7900
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+713 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=get_environ_proxies
+766 6400
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\request.py
+cfn=getproxies
+calls=1 2663
+766 725900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=should_bypass_proxies
+calls=1 705
+766 618600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=select_proxy
+778 10200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=hostname
+calls=6 155
+778 24500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=2 366
+778 25400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=default_user_agent
+804 3300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=default_headers
+813 8000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__init__
+calls=1 42
+813 25000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=default_user_agent
+calls=1 804
+813 3300
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=1 0
+813 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=get_auth_from_url
+917 4100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=username
+calls=1 147
+917 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=urlparse
+calls=1 366
+917 8300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\urllib\parse.py
+cfn=unquote
+calls=1 624
+917 1400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+fn=check_header_validity
+938 5700
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=5 0
+938 900
+cfl=~
+cfn=<method 'match' of 're.Pattern' objects>
+calls=5 0
+938 9800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__init__:47
+47 3700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\threading.py
+cfn=RLock
+calls=2 81
+47 3200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__getitem__:54
+54 4900
+cfl=~
+cfn=<method 'pop' of 'collections.OrderedDict' objects>
+calls=1 0
+54 1200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__setitem__
+61 4400
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+61 300
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+61 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=clear
+92 14200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+cfn=itervalues
+calls=2 614
+92 5400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=<lambda>
+calls=1 173
+92 112400
+cfl=~
+cfn=<method 'clear' of 'collections.OrderedDict' objects>
+calls=2 0
+92 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__init__:141
+141 6700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=extend
+calls=1 231
+141 22800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+141 2200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__getitem__:156
+156 11600
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=5 0
+156 1000
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=8 0
+156 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=__iter__
+187 4000
+cfl=~
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=1 0
+187 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=add
+215 7300
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+215 700
+cfl=~
+cfn=<method 'setdefault' of 'collections.OrderedDict' objects>
+calls=4 0
+215 2500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+fn=extend
+231 7700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=add
+calls=4 215
+231 10500
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+231 600
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+231 3100
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+231 500
+cfl=~
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+231 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=__init__
+110 13600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=__init__:815
+calls=1 815
+110 26300
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+110 200
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=4 0
+110 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=host:127
+127 900
+cfl=~
+cfn=<method 'rstrip' of 'str' objects>
+calls=1 0
+127 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=host:146
+146 1300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=_new_conn
+156 3700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+cfn=create_connection
+calls=1 38
+156 507400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=_is_using_tunnel
+187 1000
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=1 0
+187 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=_prepare_conn
+191 1600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=_is_using_tunnel
+calls=1 187
+191 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=connect
+199 3000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=_new_conn
+calls=1 156
+199 511100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=_prepare_conn
+calls=1 191
+199 3100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=putrequest
+203 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=putrequest
+calls=1 1049
+203 28500
+cfl=~
+cfn=<method 'search' of 're.Pattern' objects>
+calls=1 0
+203 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=putheader
+216 7800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=putheader
+calls=8 1186
+216 44100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=request
+226 24000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=request
+calls=1 1227
+226 721300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__iter__
+calls=1 59
+226 1200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=<genexpr>
+calls=1 60
+226 100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=copy
+calls=1 82
+226 13500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=<genexpr>
+calls=2 232
+226 3200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+fn=<genexpr>
+232 1800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=<genexpr>
+calls=1 60
+232 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+cfn=ensure_str
+calls=1 939
+232 1100
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+232 100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=__init__:74
+74 13700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_normalize_host
+calls=1 1052
+74 5700
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+74 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=__init__:168
+168 21300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+cfn=__init__
+calls=1 33
+168 28700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+cfn=put
+calls=10 121
+168 82700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=__init__:74
+calls=1 74
+168 19600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\request.py
+cfn=__init__
+calls=1 40
+168 900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=from_float
+calls=1 165
+168 6400
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+168 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_new_conn
+222 7500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=debug
+calls=1 1412
+222 10500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=__init__
+calls=1 110
+222 40900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=connect_timeout
+calls=1 220
+222 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_get_conn
+243 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+cfn=get
+calls=1 153
+243 10500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_new_conn
+calls=1 222
+243 59300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_put_conn
+282 2300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+cfn=put
+calls=1 121
+282 18900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_validate_conn
+310 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_get_timeout
+320 2600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=clone
+calls=2 181
+320 7100
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+320 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_make_request
+357 29200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=getresponse
+calls=1 1278
+357 1040767200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\logging\__init__.py
+cfn=debug
+calls=1 1412
+357 2900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connection.py
+cfn=request
+calls=1 226
+357 763300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_validate_conn
+calls=1 310
+357 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_get_timeout
+calls=1 320
+357 4400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\response.py
+cfn=assert_header_parsing
+calls=1 40
+357 18600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=start_connect
+calls=1 195
+357 3000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=connect_timeout
+calls=1 220
+357 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=read_timeout
+calls=1 238
+357 800
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=2 0
+357 900
+cfl=~
+cfn=<method 'settimeout' of '_socket.socket' objects>
+calls=1 0
+357 3100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=close
+479 12300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=close:922
+calls=1 922
+479 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\queue.py
+cfn=get
+calls=11 153
+479 94700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=urlopen
+518 32700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=update
+calls=1 824
+518 2300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=copy
+calls=1 82
+518 58700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_get_conn
+calls=1 243
+518 72700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_get_timeout
+calls=1 320
+518 5500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_make_request
+calls=1 357
+518 1041593800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+cfn=ensure_str
+calls=1 939
+518 1300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=from_httplib
+calls=1 581
+518 111700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=getheader
+calls=1 617
+518 3900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\proxy.py
+cfn=connection_requires_http_tunnel
+calls=1 4
+518 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\request.py
+cfn=set_file_position
+calls=1 98
+518 1100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+cfn=is_retry
+calls=1 449
+518 4500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=connect_timeout
+calls=1 220
+518 200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_encode_target
+calls=1 320
+518 20900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=parse_url
+calls=1 330
+518 47000
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+518 100
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+518 200
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+518 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+fn=_normalize_host
+1052 1300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_normalize_host
+calls=1 274
+1052 4100
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+1052 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+fn=itervalues
+614 4100
+cfl=~
+cfn=<built-in method builtins.iter>
+calls=2 0
+614 800
+cfl=~
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=2 0
+614 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+fn=ensure_str
+939 1900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+939 500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+fn=ensure_text
+959 7200
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=22 0
+959 3200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=_default_key_normalizer
+78 22000
+cfl=<string>
+cfn=__new__
+calls=1 1
+78 1400
+cfl=~
+cfn=<method 'copy' of 'dict' objects>
+calls=1 0
+78 200
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+78 200
+cfl=~
+cfn=<method 'keys' of 'dict' objects>
+calls=1 0
+78 200
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=2 0
+78 300
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=6 0
+78 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=__init__
+170 7900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__init__:47
+calls=2 47
+170 6900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\request.py
+cfn=__init__
+calls=2 40
+170 900
+cfl=~
+cfn=<method 'copy' of 'dict' objects>
+calls=2 0
+170 700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=<lambda>
+173 4300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=close
+calls=1 479
+173 108100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=_new_pool
+188 6700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=__init__:168
+calls=1 168
+188 159900
+cfl=~
+cfn=<method 'pop' of 'dict' objects>
+calls=11 0
+188 1400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=clear
+215 3200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=clear
+calls=2 92
+215 133100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=connection_from_host
+224 3300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=connection_from_context
+calls=1 247
+224 219700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=_merge_pool_kwargs
+calls=1 302
+224 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=connection_from_context
+247 4600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=_default_key_normalizer
+calls=1 78
+247 25400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=connection_from_pool_key
+calls=1 262
+247 189200
+cfl=~
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+247 400
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+247 100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=connection_from_pool_key
+262 7600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+262 8100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__setitem__
+calls=1 61
+262 5500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=_new_pool
+calls=1 188
+262 168000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=connection_from_url
+286 4700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+cfn=connection_from_host
+calls=1 224
+286 224500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=parse_url
+calls=1 330
+286 94700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\poolmanager.py
+fn=_merge_pool_kwargs
+302 900
+cfl=~
+cfn=<method 'copy' of 'dict' objects>
+calls=1 0
+302 600
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\request.py
+fn=__init__
+40 1800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=__init__
+195 17800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+195 5100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=<genexpr>
+calls=2 251
+195 1600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=_init_length
+calls=1 317
+195 13000
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+195 500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+195 1100
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+195 200
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+195 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=<genexpr>
+251 1400
+cfl=~
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+251 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=release_conn
+275 2800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\connectionpool.py
+cfn=_put_conn
+calls=1 282
+275 21200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=_init_length
+317 7800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+317 3300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=<listcomp>
+calls=1 343
+317 1100
+cfl=~
+cfn=<built-in method builtins.len>
+calls=1 0
+317 200
+cfl=~
+cfn=<method 'pop' of 'set' objects>
+calls=1 0
+317 300
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=1 0
+317 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=<listcomp>
+343 1100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=_init_decoder
+369 2800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+369 3000
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+369 100
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=_decode
+392 700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=_error_catcher
+425 3100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=isclosed
+calls=1 433
+425 300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=release_conn
+calls=1 275
+425 24000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=read
+481 12500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=__enter__
+calls=1 108
+481 2900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=__exit__
+calls=1 117
+481 30300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\contextlib.py
+cfn=helper
+calls=1 238
+481 18300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=read
+calls=1 443
+481 142600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=_init_decoder
+calls=1 369
+481 5900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=_decode
+calls=1 392
+481 700
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=1 0
+481 900
+cfl=~
+cfn=<built-in method builtins.len>
+calls=2 0
+481 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=stream
+555 4200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=read
+calls=1 481
+555 214400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\response.py
+cfn=is_fp_closed
+calls=2 9
+555 3500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=from_httplib
+581 12900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=items
+calls=1 451
+581 15100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\_collections.py
+cfn=__init__:141
+calls=1 141
+581 31700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=__init__
+calls=1 195
+581 39700
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=1 0
+581 900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+581 11400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=getheader
+617 1100
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=get
+calls=1 657
+617 2800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+fn=closed
+635 1900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=isclosed
+calls=1 433
+635 500
+cfl=~
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+635 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+fn=create_connection
+38 10900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=__init__:219
+calls=1 219
+38 131000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=getaddrinfo
+calls=1 897
+38 36300
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+cfn=_set_socket_options
+calls=1 101
+38 17400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+cfn=allowed_gai_family
+calls=1 109
+38 900
+cfl=~
+cfn=<method 'connect' of '_socket.socket' objects>
+calls=1 0
+38 259800
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=1 0
+38 43800
+cfl=~
+cfn=<method 'settimeout' of '_socket.socket' objects>
+calls=1 0
+38 7000
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+38 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+fn=_set_socket_options
+101 3000
+cfl=~
+cfn=<method 'setsockopt' of '_socket.socket' objects>
+calls=1 0
+101 14400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\connection.py
+fn=allowed_gai_family
+109 900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\proxy.py
+fn=connection_requires_http_tunnel
+4 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+fn=_init
+12 1800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+fn=_qsize
+15 10700
+cfl=~
+cfn=<built-in method builtins.len>
+calls=23 0
+15 3900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+fn=_put
+18 8000
+cfl=~
+cfn=<method 'append' of 'collections.deque' objects>
+calls=11 0
+18 1700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\queue.py
+fn=_get
+21 7200
+cfl=~
+cfn=<method 'pop' of 'collections.deque' objects>
+calls=11 0
+21 2400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\request.py
+fn=set_file_position
+98 900
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=1 0
+98 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\response.py
+fn=is_fp_closed
+9 2500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=isclosed
+calls=2 433
+9 1000
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\response.py
+fn=assert_header_parsing
+40 6600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=is_multipart
+calls=1 181
+40 1300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\email\message.py
+cfn=get_payload
+calls=1 213
+40 9500
+cfl=~
+cfn=<built-in method builtins.getattr>
+calls=2 0
+40 800
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+40 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+fn=__init__
+225 8600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+cfn=<listcomp>
+calls=2 282
+225 1700
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+fn=<listcomp>
+282 1400
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=2 0
+282 300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+fn=_is_method_retryable
+429 2700
+cfl=~
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+429 200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+fn=is_retry
+449 1600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\retry.py
+cfn=_is_method_retryable
+calls=1 429
+449 2900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=__init__
+102 8100
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=_validate_timeout
+calls=12 119
+102 3300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=_validate_timeout
+119 3300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=from_float
+165 2000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=__init__
+calls=1 102
+165 4400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=clone
+181 2900
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+cfn=__init__
+calls=2 102
+181 4200
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=start_connect
+195 2600
+cfl=~
+cfn=<built-in method time.monotonic>
+calls=1 0
+195 400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=connect_timeout
+220 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\timeout.py
+fn=read_timeout
+238 800
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=__new__
+91 9600
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=2 0
+91 600
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=3 0
+91 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=_encode_invalid_chars
+210 108400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+cfn=ensure_text
+calls=4 959
+210 4100
+cfl=~
+cfn=<built-in method builtins.len>
+calls=4 0
+210 2100
+cfl=~
+cfn=<built-in method builtins.ord>
+calls=64 0
+210 7500
+cfl=~
+cfn=<method 'count' of 'bytes' objects>
+calls=4 0
+210 2600
+cfl=~
+cfn=<method 'decode' of 'bytearray' objects>
+calls=4 0
+210 1900
+cfl=~
+cfn=<method 'decode' of 'bytes' objects>
+calls=64 0
+210 9300
+cfl=~
+cfn=<method 'encode' of 'str' objects>
+calls=4 0
+210 2400
+cfl=~
+cfn=<method 'subn' of 're.Pattern' objects>
+calls=4 0
+210 12300
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=_remove_path_dot_segments
+244 15600
+cfl=~
+cfn=<method 'append' of 'list' objects>
+calls=6 0
+244 1200
+cfl=~
+cfn=<method 'endswith' of 'str' objects>
+calls=3 0
+244 1500
+cfl=~
+cfn=<method 'join' of 'str' objects>
+calls=3 0
+244 1100
+cfl=~
+cfn=<method 'split' of 'str' objects>
+calls=3 0
+244 2100
+cfl=~
+cfn=<method 'startswith' of 'str' objects>
+calls=3 0
+244 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=_normalize_host
+274 14900
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+274 600
+cfl=~
+cfn=<method 'match' of 're.Pattern' objects>
+calls=6 0
+274 6400
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=_encode_target
+320 2000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_encode_invalid_chars
+calls=2 210
+320 17200
+cfl=~
+cfn=<method 'groups' of 're.Match' objects>
+calls=1 0
+320 200
+cfl=~
+cfn=<method 'match' of 're.Pattern' objects>
+calls=1 0
+320 1500
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=parse_url
+330 52800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=__new__
+calls=3 91
+330 20500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_encode_invalid_chars
+calls=3 210
+330 133400
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_remove_path_dot_segments
+calls=3 244
+330 23000
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=_normalize_host
+calls=3 274
+330 17800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+cfn=ensure_type
+calls=18 411
+330 12500
+cfl=~
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+330 400
+cfl=~
+cfn=<method 'groups' of 're.Match' objects>
+calls=5 0
+330 2400
+cfl=~
+cfn=<method 'lower' of 'str' objects>
+calls=4 0
+330 700
+cfl=~
+cfn=<method 'match' of 're.Pattern' objects>
+calls=5 0
+330 25800
+cfl=~
+cfn=<method 'search' of 're.Pattern' objects>
+calls=3 0
+330 14900
+
+fl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\util\url.py
+fn=ensure_type
+411 6200
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\packages\six.py
+cfn=ensure_text
+calls=7 959
+411 6300
+
+fl=~
+fn=<built-in method __new__ of type object at 0x00007FFD1EE43810>
+0 7700
+
+fl=~
+fn=<built-in method _abc._abc_instancecheck>
+0 28000
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\abc.py
+cfn=__subclasscheck__
+calls=8 100
+0 109400
+
+fl=~
+fn=<built-in method _abc._abc_subclasscheck>
+0 84900
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__subclasshook__:392
+calls=31 392
+0 9500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\_collections_abc.py
+cfn=__subclasshook__:406
+calls=1 406
+0 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\abc.py
+cfn=__subclasscheck__
+calls=24 100
+0 68100
+
+fl=~
+fn=<built-in method _imp._fix_co_filename>
+0 600
+
+fl=~
+fn=<built-in method _imp.acquire_lock>
+0 1400
+
+fl=~
+fn=<built-in method _imp.is_builtin>
+0 6400
+
+fl=~
+fn=<built-in method _imp.is_frozen>
+0 2100
+
+fl=~
+fn=<built-in method _imp.release_lock>
+0 1500
+
+fl=~
+fn=<built-in method _socket.getaddrinfo>
+0 21500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\idna.py
+cfn=encode
+calls=1 147
+0 2900
+
+fl=~
+fn=<built-in method _sre.compile>
+0 1100
+
+fl=~
+fn=<built-in method _thread.allocate_lock>
+0 9900
+
+fl=~
+fn=<built-in method _thread.get_ident>
+0 800
+
+fl=~
+fn=<built-in method builtins.__build_class__>
+0 52800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+cfn=NetrcParseError
+calls=1 10
+0 1200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+cfn=netrc
+calls=1 22
+0 2200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\shlex.py
+cfn=shlex
+calls=1 19
+0 4400
+
+fl=~
+fn=<built-in method builtins.__import__>
+0 4100
+
+fl=~
+fn=<built-in method builtins.all>
+0 2800
+
+fl=~
+fn=<built-in method builtins.any>
+0 2400
+
+fl=~
+fn=<built-in method builtins.exec>
+0 3600
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\netrc.py
+cfn=<module>
+calls=1 1
+0 927300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\shlex.py
+cfn=<module>
+calls=1 1
+0 204700
+
+fl=~
+fn=<built-in method builtins.getattr>
+0 13700
+
+fl=~
+fn=<built-in method builtins.hasattr>
+0 14700
+
+fl=~
+fn=<built-in method builtins.isinstance>
+0 79200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\abc.py
+cfn=__instancecheck__
+calls=28 96
+0 151600
+
+fl=~
+fn=<built-in method builtins.iter>
+0 800
+
+fl=~
+fn=<built-in method builtins.len>
+0 19800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\sre_parse.py
+cfn=__len__
+calls=1 160
+0 700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\structures.py
+cfn=__len__
+calls=2 62
+0 1400
+
+fl=~
+fn=<built-in method builtins.max>
+0 600
+
+fl=~
+fn=<built-in method builtins.min>
+0 1800
+
+fl=~
+fn=<built-in method builtins.next>
+0 3600
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\utils.py
+cfn=set_environ
+calls=2 683
+0 800
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\urllib3\response.py
+cfn=_error_catcher
+calls=2 425
+0 27400
+
+fl=~
+fn=<built-in method builtins.ord>
+0 8300
+
+fl=~
+fn=<built-in method builtins.print>
+0 18500
+
+fl=~
+fn=<built-in method builtins.sorted>
+0 4200
+
+fl=~
+fn=<built-in method from_bytes>
+0 1300
+
+fl=~
+fn=<built-in method fromkeys>
+0 1600
+
+fl=~
+fn=<built-in method io.open_code>
+0 427200
+
+fl=~
+fn=<built-in method marshal.loads>
+0 86400
+
+fl=~
+fn=<built-in method nt.fspath>
+0 1200
+
+fl=~
+fn=<built-in method nt.stat>
+0 504900
+
+fl=~
+fn=<built-in method time.monotonic>
+0 400
+
+fl=~
+fn=<built-in method time.perf_counter>
+0 900
+
+fl=~
+fn=<built-in method time.time>
+0 1900
+
+fl=~
+fn=<built-in method winreg.OpenKey>
+0 71000
+
+fl=~
+fn=<built-in method winreg.QueryValueEx>
+0 63900
+
+fl=~
+fn=<function HTTPResponse.flush at 0x00000258D63DD550>
+0 300
+
+fl=~
+fn=<function SocketIO.close at 0x00000258D62D23A0>
+0 2700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\http\client.py
+cfn=flush
+calls=1 422
+0 4100
+
+fl=~
+fn=<function socket.close at 0x00000258D62CE940>
+0 75500
+
+fl=~
+fn=<method 'Close' of 'PyHKEY' objects>
+0 16800
+
+fl=~
+fn=<method '__enter__' of '_thread.lock' objects>
+0 6800
+
+fl=~
+fn=<method '__exit__' of '_thread.lock' objects>
+0 4700
+
+fl=~
+fn=<method '_checkClosed' of '_io._IOBase' objects>
+0 2100
+
+fl=~
+fn=<method '_checkReadable' of '_io._IOBase' objects>
+0 1800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=readable
+calls=3 694
+0 1600
+
+fl=~
+fn=<method 'acquire' of '_thread.RLock' objects>
+0 3000
+
+fl=~
+fn=<method 'acquire' of '_thread.lock' objects>
+0 10300
+
+fl=~
+fn=<method 'append' of 'collections.deque' objects>
+0 1700
+
+fl=~
+fn=<method 'append' of 'list' objects>
+0 9900
+
+fl=~
+fn=<method 'clear' of 'collections.OrderedDict' objects>
+0 1100
+
+fl=~
+fn=<method 'close' of '_io.BufferedReader' objects>
+0 3300
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=close:732
+calls=1 732
+0 91800
+
+fl=~
+fn=<method 'connect' of '_socket.socket' objects>
+0 259800
+
+fl=~
+fn=<method 'copy' of 'dict' objects>
+0 1500
+
+fl=~
+fn=<method 'count' of 'bytes' objects>
+0 2600
+
+fl=~
+fn=<method 'count' of 'str' objects>
+0 2400
+
+fl=~
+fn=<method 'decode' of 'bytearray' objects>
+0 1900
+
+fl=~
+fn=<method 'decode' of 'bytes' objects>
+0 11000
+
+fl=~
+fn=<method 'disable' of '_lsprof.Profiler' objects>
+0 400
+
+fl=~
+fn=<method 'encode' of 'str' objects>
+0 16700
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\__init__.py
+cfn=search_function
+calls=1 70
+0 27800
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\encodings\idna.py
+cfn=encode
+calls=1 147
+0 11500
+
+fl=~
+fn=<method 'endswith' of 'str' objects>
+0 3500
+
+fl=~
+fn=<method 'extend' of 'collections.deque' objects>
+0 900
+
+fl=~
+fn=<method 'extend' of 'list' objects>
+0 1700
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=<genexpr>
+calls=1 184
+0 200
+
+fl=~
+fn=<method 'find' of 'bytearray' objects>
+0 3100
+
+fl=~
+fn=<method 'find' of 'str' objects>
+0 5600
+
+fl=~
+fn=<method 'format' of 'str' objects>
+0 1900
+
+fl=~
+fn=<method 'fullmatch' of 're.Pattern' objects>
+0 6300
+
+fl=~
+fn=<method 'get' of 'dict' objects>
+0 9300
+
+fl=~
+fn=<method 'groups' of 're.Match' objects>
+0 2600
+
+fl=~
+fn=<method 'insert' of 'list' objects>
+0 400
+
+fl=~
+fn=<method 'isalnum' of 'str' objects>
+0 900
+
+fl=~
+fn=<method 'isascii' of 'str' objects>
+0 300
+
+fl=~
+fn=<method 'items' of 'collections.OrderedDict' objects>
+0 1200
+
+fl=~
+fn=<method 'items' of 'dict' objects>
+0 4200
+
+fl=~
+fn=<method 'join' of 'bytes' objects>
+0 4500
+cfl=D:\FAC_MASTER\AN1\SEM1\TAIP\PROIECT_TEST\venv\lib\site-packages\requests\models.py
+cfn=generate
+calls=2 749
+0 226600
+
+fl=~
+fn=<method 'join' of 'str' objects>
+0 14300
+
+fl=~
+fn=<method 'keys' of 'dict' objects>
+0 1600
+
+fl=~
+fn=<method 'lower' of 'str' objects>
+0 44400
+
+fl=~
+fn=<method 'lstrip' of 'str' objects>
+0 2200
+
+fl=~
+fn=<method 'match' of 're.Pattern' objects>
+0 54900
+
+fl=~
+fn=<method 'partition' of 'str' objects>
+0 5400
+
+fl=~
+fn=<method 'pop' of 'collections.OrderedDict' objects>
+0 1200
+
+fl=~
+fn=<method 'pop' of 'collections.deque' objects>
+0 2400
+
+fl=~
+fn=<method 'pop' of 'dict' objects>
+0 4200
+
+fl=~
+fn=<method 'pop' of 'list' objects>
+0 500
+
+fl=~
+fn=<method 'pop' of 'set' objects>
+0 300
+
+fl=~
+fn=<method 'popleft' of 'collections.deque' objects>
+0 800
+
+fl=~
+fn=<method 'read' of '_io.BufferedReader' objects>
+0 90700
+
+fl=~
+fn=<method 'read' of '_io.StringIO' objects>
+0 1800
+
+fl=~
+fn=<method 'readinto' of '_io.BufferedReader' objects>
+0 2500
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=readinto
+calls=1 655
+0 16400
+
+fl=~
+fn=<method 'readline' of '_io.BufferedReader' objects>
+0 15200
+cfl=C:\Users\rmunteanu\AppData\Local\Programs\Python\Python38\lib\socket.py
+cfn=readinto
+calls=2 655
+0 1040266000
+
+fl=~
+fn=<method 'readlines' of '_io._IOBase' objects>
+0 15200
+
+fl=~
+fn=<method 'recv_into' of '_socket.socket' objects>
+0 1040261800
+
+fl=~
+fn=<method 'release' of '_thread.RLock' objects>
+0 1400
+
+fl=~
+fn=<method 'replace' of 'str' objects>
+0 400
+
+fl=~
+fn=<method 'rfind' of 'str' objects>
+0 1800
+
+fl=~
+fn=<method 'rpartition' of 'str' objects>
+0 6200
+
+fl=~
+fn=<method 'rsplit' of 'str' objects>
+0 1900
+
+fl=~
+fn=<method 'rstrip' of 'bytes' objects>
+0 1000
+
+fl=~
+fn=<method 'rstrip' of 'str' objects>
+0 9900
+
+fl=~
+fn=<method 'search' of 're.Pattern' objects>
+0 21700
+
+fl=~
+fn=<method 'seek' of '_io.StringIO' objects>
+0 1100
+
+fl=~
+fn=<method 'sendall' of '_socket.socket' objects>
+0 75400
+
+fl=~
+fn=<method 'setdefault' of 'collections.OrderedDict' objects>
+0 2500
+
+fl=~
+fn=<method 'setdefault' of 'dict' objects>
+0 1100
+
+fl=~
+fn=<method 'setsockopt' of '_socket.socket' objects>
+0 14400
+
+fl=~
+fn=<method 'settimeout' of '_socket.socket' objects>
+0 10100
+
+fl=~
+fn=<method 'sort' of 'list' objects>
+0 1000
+
+fl=~
+fn=<method 'split' of 'bytes' objects>
+0 7100
+
+fl=~
+fn=<method 'split' of 'str' objects>
+0 8400
+
+fl=~
+fn=<method 'startswith' of 'bytearray' objects>
+0 6100
+
+fl=~
+fn=<method 'startswith' of 'str' objects>
+0 11100
+
+fl=~
+fn=<method 'strip' of 'str' objects>
+0 1700
+
+fl=~
+fn=<method 'subn' of 're.Pattern' objects>
+0 12300
+
+fl=~
+fn=<method 'tobytes' of 'memoryview' objects>
+0 800
+
+fl=~
+fn=<method 'translate' of 'bytearray' objects>
+0 1000
+
+fl=~
+fn=<method 'truncate' of '_io.StringIO' objects>
+0 900
+
+fl=~
+fn=<method 'update' of 'collections.OrderedDict' objects>
+0 1200
+
+fl=~
+fn=<method 'update' of 'dict' objects>
+0 1700
+
+fl=~
+fn=<method 'upper' of 'str' objects>
+0 107600
+
+fl=~
+fn=<method 'values' of 'collections.OrderedDict' objects>
+0 2800
+
+fl=~
+fn=<method 'values' of 'dict' objects>
+0 500
+
+fl=~
+fn=<method 'write' of '_io.StringIO' objects>
+0 3600
+
