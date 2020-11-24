@@ -1,24 +1,28 @@
+import pyodbc
+import psycopg2
+
 """Singleton Design Pattern Implementation"""
 
+
 class InitiateDBConnection(object):
-    def __init__(self, driver, server, database, user, password):
-        self.driver = driver
-        self.server = server
+    def __init__(self, database, host, port, user, password):
         self.database = database
+        self.host = host
+        self.port = port
         self.user = user
         self.password = password
         self.dbconn = None
 
     # creats new connection
     def create_connection(self):
-        return pyodbc.connect("DRIVER={};".format(self.driver) + \
-                              "SERVER={};".format(self.server) + \
-                              "DATABASE={};".format(self.database) + \
-                              "UID={};".format(self.user) + \
-                              "PWD={};".format(self.password) + \
-                              "CHARSET=UTF8",
-                              ansi=True)
-
+        try:
+            return psycopg2.connect(user = self.user,
+                                password = self.password,
+                              database = self.database,
+                              host = self.host, port = self.port)
+        except(Exception,psycopg2.Error) as error:
+            print("Error while connecting to PostgreSQL",error)
+            return None
     # For explicitly opening database connection
     def __enter__(self):
         self.dbconn = self.create_connection()
@@ -27,6 +31,7 @@ class InitiateDBConnection(object):
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.dbconn.close()
 
+
 class DBConnection(object):
     connection = None
 
@@ -34,7 +39,7 @@ class DBConnection(object):
     def get_connection(cls, new=False):
         """Call InitiateDBConnection class to initiate a new Singleton database connection"""
         if new or not cls.connection:
-            cls.connection = InitiateDBConnection().create_connection()
+            cls.connection = InitiateDBConnection(database='aset2020',host = '127.0.0.1',port='5432', user='postgres', password='Rares1234_!').create_connection()
         return cls.connection
 
     @classmethod
