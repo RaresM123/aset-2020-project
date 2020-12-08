@@ -1,5 +1,5 @@
 """Decorator implemented for Authorizing the Requests made to Server"""
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import requests
 
 import DataSetParser
@@ -46,34 +46,45 @@ def processSentence(sentence):
 
 
 @app.route('/check_statement', methods=['POST'])
-@authorize
+# @authorize
 def SendStatement():
 
+
+    sentence = request.form['sentence']
     response = {
         'success': True,
         'processedSentence': None
     }
 
-    try:
-        body = request.get_json() or dict()
-    except:
-        body = dict()
-    sentence = body.get('sentence')
+    # try:
+    #     body = request.get_json() or dict()
+    # except:
+    #     body = dict()
+    # sentence = body.get('sentence')
     if not sentence:
         response['success'] = False
         LOGGER.error("Wrong key provided")
-        return jsonify(response)
-
+        # return jsonify(response)
+        return render_template("public/response_sentence.html", page_body=response)
     try:
         processed_sentence = processSentence(sentence)
     except Exception as e:
         response['success'] = False
         LOGGER.error("Failed to process sentence")
-        return jsonify(response)
+        # return jsonify(response)
+        return render_template("public/response_sentence.html", page_body=response)
 
-    response['processedSentence'] = processed_sentence
+    response['processedSentence'] = str(processed_sentence)
     LOGGER.info("request successfully processed")
-    return jsonify(response)
+    # return jsonify(response)
+    print(response)
+    return render_template("public/response_sentence.html",
+                           page_body="Generated sentence is: {}".format(response['processedSentence']))
+
+
+@app.route("/")
+def index():
+    return render_template("public/insert_sentence.html")
 
 
 if __name__ == '__main__':
