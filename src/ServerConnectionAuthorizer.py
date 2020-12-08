@@ -1,15 +1,15 @@
 """Decorator implemented for Authorizing the Requests made to Server"""
 from flask import Flask, jsonify, request, render_template
 import requests
-
+import subprocess
 import DataSetParser
 import TransformersImplementation
 from logger.logger import LOGGER
-
+import os
+import traceback
 app = Flask(__name__)
-
+os.chdir("./gpt2")
 AUTHORIZATION_TOKEN_EXPECTED = 'xy124zjw3'
-
 
 def authorize(_function):
     """These will be used for making a simple form of authentication when requests are made to server"""
@@ -27,20 +27,27 @@ def authorize(_function):
 def processSentence(sentence):
 
     LOGGER.info("start processing sentence: {}".format(sentence))
-    stemmer = TransformersImplementation.StemmerImplementation()
-    lemmer = TransformersImplementation.LemmatizerImplementationSPACY()
-    stop_words = TransformersImplementation.StopWordsImplementation()
+    #stemmer = TransformersImplementation.StemmerImplementation()
+    #lemmer = TransformersImplementation.LemmatizerImplementationSPACY()
+    #stop_words = TransformersImplementation.StopWordsImplementation()
 
-    dataSetParser = DataSetParser.DataSetParser()
-    dataSetParser.SetLemmatizer(lemmer)
-    dataSetParser.SetStemmer(stemmer)
-    dataSetParser.SetStopWords(stop_words)
+    #dataSetParser = DataSetParser.DataSetParser()
+    #dataSetParser.SetLemmatizer(lemmer)
+    #dataSetParser.SetStemmer(stemmer)
+    #dataSetParser.SetStopWords(stop_words)
 
-    dataSetParser.PreProcessData(sentence)
-    LOGGER.info("finished processing sentence: {}".format(sentence))
-    LOGGER.info("New form of sentence: {}".format(dataSetParser.corpus))
-    return dataSetParser.corpus
-
+    #dataSetParser.PreProcessData(sentence)
+    #LOGGER.info("finished processing sentence: {}".format(sentence))
+    #LOGGER.info("New form of sentence: {}".format(dataSetParser.corpus))
+    #return dataSetParser.corpus
+    try:
+        output = subprocess.check_output('python3 src/interactive_conditional_samples.py --raw_text "{}"'.format(sentence),shell=True)
+        response = output.decode('utf-8').split("\n")[-2]
+        print(response)
+        return response
+    except:
+        traceback.print_exc()
+        exit()
 
 """this is where the authorization is made"""
 
@@ -69,6 +76,7 @@ def SendStatement():
     try:
         processed_sentence = processSentence(sentence)
     except Exception as e:
+        print(e.stack)
         response['success'] = False
         LOGGER.error("Failed to process sentence")
         # return jsonify(response)
