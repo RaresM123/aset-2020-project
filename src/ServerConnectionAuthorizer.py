@@ -123,11 +123,11 @@ def SendStatement():
     # except:
     #     body = dict()
     # sentence = body.get('sentence')
-    if not sentence:
-        response['success'] = False
-        LOGGER.error("Wrong key provided")
-        # return jsonify(response)
-        return render_template("public/response_sentence.html", page_body=response)
+    # if not sentence:
+    #     response['success'] = False
+    #     LOGGER.error("Wrong key provided")
+    #     # return jsonify(response)
+    #     return render_template("public/response_sentence.html", page_body=response)
     try:
         processed_sentence = Monitors.Monitor_InputSentence(sentence)
         processed_sentence = processSentence(processed_sentence)
