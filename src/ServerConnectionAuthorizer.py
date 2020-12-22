@@ -2,8 +2,6 @@
 from flask import Flask, jsonify, request, render_template
 import requests
 import subprocess
-import DataSetParser
-import TransformersImplementation
 from logger.logger import LOGGER
 import traceback
 import os
@@ -11,6 +9,11 @@ import numpy as np
 import tensorflow as tf
 import json
 import model, sample, encoder
+
+import DataSetParser
+import TransformersImplementation
+import Monitors
+
 app = Flask(__name__)
 AUTHORIZATION_TOKEN_EXPECTED = 'xy124zjw3'
 
@@ -115,7 +118,8 @@ def SendStatement():
         # return jsonify(response)
         return render_template("public/response_sentence.html", page_body=response)
     try:
-        processed_sentence = processSentence(sentence)
+        processed_sentence = Monitors.Monitor_InputSentence(sentence)
+        processed_sentence = processSentence(processed_sentence)
     except Exception as e:
         print(e.stack)
         response['success'] = False
