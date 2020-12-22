@@ -39,3 +39,23 @@ def Monitor_InputSentence(sentence):
     return sentence
 
     # / IMPLEMENTATION #
+
+
+def monitor_parameters(param_dict):
+
+    """
+    This function verify each parameter to have the values in acceptable and correct ranges
+    :param param_dict: dictionary of parameters
+    :return: a new formed dictionary of paramters after monitorizing
+    """
+    new_param_dict = {}
+    new_param_dict["model_name"] = "beta2" if param_dict["model_name"] is None else param_dict["model_name"]
+    new_param_dict["seed"] = None if (param_dict["seed"] > 100 or param_dict["seed"] < -100) else param_dict["seed"]
+    new_param_dict["nsamples"] = 1 if (param_dict["nsamples"] < 0 or param_dict["nsamples"] is None) else param_dict["nsamples"]
+    new_param_dict["batch_size"] = 1 if (param_dict["batch_size"] < 0 or param_dict["batch_size"] is None) else param_dict["batch_size"]
+    new_param_dict["length"] = None if param_dict["length"] < 0 else param_dict["length"]
+    new_param_dict["temperature"] = 1 if (param_dict["temperature"] < 0 or param_dict["temperature"] is None) else param_dict["temperature"]
+    new_param_dict["top_k"] = 40 if (param_dict["top_k"] < 0 or param_dict["top_k"] is None) else param_dict["top_k"]
+    new_param_dict["top_p"] = 0.0 if (param_dict["top_p"] < 0 or param_dict["top_p"] is None) else param_dict["top_p"]
+    new_param_dict["raw_sentence"] = param_dict["raw_sentence"]
+    return new_param_dict

@@ -17,6 +17,17 @@ import Monitors
 app = Flask(__name__)
 AUTHORIZATION_TOKEN_EXPECTED = 'xy124zjw3'
 
+PARAMS_DICT = {"model_name": None,
+               "seed": None,
+               "nsamples": None,
+               "batch_size": None,
+               "length": None,
+               "temperature": None,
+               "top_k": None,
+               "top_p": None,
+               "raw_text": None}
+
+
 def authorize(_function):
     """These will be used for making a simple form of authentication when requests are made to server"""
     def wrapper(*args, **kwargs):
@@ -38,53 +49,53 @@ def processSentence(sentence):
         # response = output.decode('utf-8').split("\n")[-2]
         # print(response)
         # return response
-        model_name = 'beta2'
-        seed = None
-        nsamples = 1
-        batch_size = 1
-        length = None
-        temperature = 1
-        top_k = 40
-        top_p = 0.0
-        raw_text = sentence
+        PARAMS_DICT["model_name"] = 'beta2'
+        PARAMS_DICT["seed"] = None
+        PARAMS_DICT["nsamples"] = 1
+        PARAMS_DICT["batch_size"] = 1
+        PARAMS_DICT["length"] = None
+        PARAMS_DICT["temperature"] = 1
+        PARAMS_DICT["top_k"] = 40
+        PARAMS_DICT["top_p"] = 0.0
+        PARAMS_DICT["raw_text"] = sentence
+        NEW_PARAMS_DICT = Monitors.monitor_parameters(PARAMS_DICT)
 
-        if batch_size is None:
-            batch_size = 1
-        assert nsamples % batch_size == 0
+        assert NEW_PARAMS_DICT["nsamples"] % NEW_PARAMS_DICT["batch_size"] == 0
 
-        enc = encoder.get_encoder(model_name)
+        enc = encoder.get_encoder(NEW_PARAMS_DICT["model_name"])
         hparams = model.default_hparams()
-        with open(os.path.join('models', model_name, 'hparams.json')) as f:
+        with open(os.path.join('models', NEW_PARAMS_DICT["model_name"], 'hparams.json')) as f:
             hparams.override_from_dict(json.load(f))
 
-        if length is None:
-            length = hparams.n_ctx // 2
-        elif length > hparams.n_ctx:
+        if NEW_PARAMS_DICT["length"] is None:
+            NEW_PARAMS_DICT["length"] = hparams.n_ctx // 2
+        elif NEW_PARAMS_DICT["length"] > hparams.n_ctx:
             raise ValueError("Can't get samples longer than window size: %s" % hparams.n_ctx)
 
         with tf.Session(graph=tf.Graph()) as sess:
-            context = tf.placeholder(tf.int32, [batch_size, None])
-            np.random.seed(seed)
-            tf.set_random_seed(seed)
+            context = tf.placeholder(tf.int32, [NEW_PARAMS_DICT["batch_size"], None])
+            np.random.seed(NEW_PARAMS_DICT["seed"])
+            tf.set_random_seed(NEW_PARAMS_DICT["seed"])
             output = sample.sample_sequence(
-                hparams=hparams, length=length,
+                hparams=hparams, length=NEW_PARAMS_DICT["length"],
                 context=context,
-                batch_size=batch_size,
-                temperature=temperature, top_k=top_k, top_p=top_p
+                batch_size=NEW_PARAMS_DICT["batch_size"],
+                temperature=NEW_PARAMS_DICT["temperature"], top_k=NEW_PARAMS_DICT["top_k"],
+                top_p=NEW_PARAMS_DICT["top_p"]
             )
 
             saver = tf.train.Saver()
-            ckpt = tf.train.latest_checkpoint(os.path.join('models', model_name))
+            ckpt = tf.train.latest_checkpoint(os.path.join('models', NEW_PARAMS_DICT["model_name"]))
             saver.restore(sess, ckpt)
 
             while True:
-                context_tokens = enc.encode(raw_text)
+                context_tokens = enc.encode(NEW_PARAMS_DICT["raw_text"])
                 generated = 0
-                for _ in range(nsamples // batch_size):
+                for _ in range(NEW_PARAMS_DICT["nsamples"] // NEW_PARAMS_DICT["batch_size"]):
                     out = sess.run(output, feed_dict={
-                        context: [context_tokens for _ in range(batch_size)]
+                        context: [context_tokens for _ in range(NEW_PARAMS_DICT["batch_size"])]
                     })[:, len(context_tokens):]
-                    for i in range(batch_size):
+                    for i in range(NEW_PARAMS_DICT["batch_size"]):
                         generated += 1
                         text = enc.decode(out[i])
                         return text.split('<|endoftext|>')[0]
