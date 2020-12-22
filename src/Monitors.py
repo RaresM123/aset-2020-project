@@ -1,5 +1,6 @@
 import nltk
 import language_check
+from pattern.text.en import singularize
 
 def Monitor_InputSentence(sentence):
     """
@@ -13,9 +14,11 @@ def Monitor_InputSentence(sentence):
 
     def Monitor_DeleteNonEnglishWords(sentence):
         # We will clean the sentence from non-english words
+        nltk.download('words')
         words = set(nltk.corpus.words.words())
+
         sentence = " ".join(w for w in nltk.wordpunct_tokenize(sentence)
-                            if w.lower() in words or not w.isalpha())
+                            if singularize(w).lower() in words or not w.isalpha())
         return sentence
 
     def Monitor_SpellingCheck(sentence):
@@ -34,8 +37,9 @@ def Monitor_InputSentence(sentence):
     if sentence == None or sentence == "":
         return TEST_SENTENCE
 
-    sentence = Monitor_DeleteNonEnglishWords(sentence)
     sentence = Monitor_SpellingCheck(sentence)
+    sentence = Monitor_DeleteNonEnglishWords(sentence)
+
     return sentence
 
     # / IMPLEMENTATION #
