@@ -1,14 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Try</title>
-</head>
-<body>
-<form action="/check_statement" method="post">
-    <p>Please insert sentence</p><br>
-    <input type="text" name="sentence"/>
-    <input type="submit" value="Generate"/>
-</form>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>RealOrNot</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .centered-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .no-underline-blue {
+            color: inherit;
+            text-decoration: inherit;
+        }
+    </style>
+  </head>
+  <body class="bg-light">
+      <div class="centered-container">
+        <div class="container">
+            <a href="/" class="no-underline-blue">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        <img src="{{url_for('static', filename='abstract.svg')}}" widht="100px" height="100px"/>
+                    </div>
+                    <div class="col-md-auto">
+                        <h1>Real or Not</h1>
+                    </div>
+                </div>
+            </a>
+            <div class="row mt-4 justify-content-center">
+                <div class="col col-6 align-self-center card bg-white shadow-sm p-4">
+                    <form action="/check_statement" method="post">
+                        <div class="mb-3">
+                            <label for="phrase" class="form-label">Generate truth analysis for phrase:</label>
+                            <textarea class="form-control" id="phrase" rows="6" name="sentence"></textarea>
+                        </div>
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-primary justify-content-center">Generate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
 </html>
