@@ -15,6 +15,9 @@ def Monitor_InputSentence(sentence):
         words = set(nltk.corpus.words.words())
         sentence = " ".join(w for w in nltk.wordpunct_tokenize(sentence)
                             if singularize(w).lower() in words or not w.isalpha())
+        
+        if sentence[-1] != '.' :
+             sentence += '.'
         return sentence
     def Monitor_SpellingCheck(sentence):
         # Spelling check : ex. A sentence with a error fort he Galaxy.
@@ -28,8 +31,7 @@ def Monitor_InputSentence(sentence):
                 if tokenized_sentence[item] == w:
                     tokenized_sentence[item] = spell.correction(w)
         sentence = " ".join(tokenized_sentence)
-        if sentence[-1] != '.' :
-             sentence += '.'
+        sentence = sentence.rstrip()
         return sentence
     TEST_SENTENCE = "I like eating bugs."
     # / GLOBALS #
@@ -59,4 +61,3 @@ def monitor_parameters(param_dict):
     return new_param_dict
 
 
-print(Monitor_InputSentence("Ana has apples"))
