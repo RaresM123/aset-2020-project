@@ -13,9 +13,11 @@ import model, sample, encoder
 import DataSetParser
 import TransformersImplementation
 import Monitors
+import config
+
+AUTHORIZATION_TOKEN_EXPECTED = os.environ['AUTHENTICATION_TOKEN']
 
 app = Flask(__name__)
-AUTHORIZATION_TOKEN_EXPECTED = 'xy124zjw3'
 
 PARAMS_DICT = {"model_name": None,
                "seed": None,
@@ -31,7 +33,7 @@ PARAMS_DICT = {"model_name": None,
 def authorize(_function):
     """These will be used for making a simple form of authentication when requests are made to server"""
     def wrapper(*args, **kwargs):
-        authentication_token = request.headers.get('AuthorizationToken')
+        authentication_token = request.form.get('AuthorizationToken')
         if authentication_token == AUTHORIZATION_TOKEN_EXPECTED:
             LOGGER.info("Successful auth")
             return _function(*args, **kwargs)
@@ -108,7 +110,7 @@ def processSentence(sentence):
 
 
 @app.route('/check_statement', methods=['POST'])
-# @authorize
+@authorize
 def SendStatement():
 
 
