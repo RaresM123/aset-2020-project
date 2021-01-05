@@ -39,7 +39,7 @@ def authorize(_function):
             return _function(*args, **kwargs)
         else:
             LOGGER.error("Failed auth with token {}".format(authentication_token))
-            return 'Wrong Token', requests.status_codes.codes['unauthorized']
+            return render_template("public/insert_sentence.html"), requests.status_codes.codes['unauthorized']
     return wrapper
 
 
